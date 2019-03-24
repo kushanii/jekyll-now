@@ -5,7 +5,8 @@ title: Embedding Youtube
 
 Testing embedding youtube.
 
-{% include youtubePlayer.html id=5SemyzKgaUU %}
-
+{% raw %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5SemyzKgaUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endraw %}
 ----
 ****
