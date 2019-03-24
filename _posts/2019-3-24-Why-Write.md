@@ -17,7 +17,7 @@ During the interview, Weir talks about  how during the early research phases for
 
 Weir says [beginning at 13:23](https://www.youtube.com/watch?v=5SemyzKgaUU&feature=youtu.be&t=802)
 
-> “orbital trajectories, delta-v and stuff like that .. I learned from this high school teacher ... who had posted this stuff on his website for his students to look at ... and that’s how I learned how to do it, because this guy had bothered to post it.“
+> “calculating orbital trajectories and stuff like that .. I learned from this high school teacher ... who had posted this stuff on his website for his students to look at ... and that’s how I learned how to do it, because this guy had bothered to post it.“
 
 This is the true beauty of internet. Every bit of knowledge that we put out there, how trivial it may seem, can help someone who is less knowledgeable than us. Sure, you can go buy a book and pore over it to learn something, but sometimes an obscure PDF file from Google Search page 3, written by a random TA for their course back in 2005, states the exact concept you were trying to grasp, and explains it beautifully. In the case of this high school teacher, his writings helped Weir create one of the best hard Sci-Fi books ever, _The Martian_. And perhaps, a ten year old somewhere is reading _The Martian_ right now, dreaming about becoming a scientist herself. This is the sort of happy butterfly effect that the dreamers of computers and internet like Vannevar Bush, Douglas Engelbart and Tim Berners Lee had envisioned.
 
