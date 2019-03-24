@@ -15,7 +15,7 @@ A huge inspiration for finally kicking off this blog came from watching Adam Sav
 
 During the interview, Weir talks about  how during the early research phases for his book, one great resource has been “amateur” websites - think of stuff in the flavor of BOB’S SPACE PAGE. 
 
-Weir says [beginning at 13:23] (https://www.youtube.com/watch?v=5SemyzKgaUU&feature=youtu.be&t=802)
+Weir says [beginning at 13:23](https://www.youtube.com/watch?v=5SemyzKgaUU&feature=youtu.be&t=802)
 
 > “orbital trajectories, delta-v and stuff like that .. I learned from this high school teacher ... who had posted this stuff on his website for his students to look at ... and that’s how I learned how to do it, because this guy had bothered to post it.“
 
