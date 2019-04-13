@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-I am an Eletrical Engineer at Microsoft Surface.
+I am an Electrical Engineer working at Microsoft Surface.
+The commentary on this website is my own and does not represent Microsoft.
 
 ### More Information
 
-I like tracksuits and making websites
+I like tracksuits and making websites.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+I would love to read your comments and questions. I can be reached at  iskender {at} iskender [dot] ee
