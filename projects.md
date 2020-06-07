@@ -18,4 +18,4 @@ Autonomous and remote controlled robot design from ground up.
 
 ## Personal
 
-TBD
+To be written up :)

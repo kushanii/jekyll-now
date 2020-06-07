@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Why do I write this blog?
+date: 2019-03-24 23:22:00 +0000
+visible: 1
 ---
 
 Starting a blog has been on my mind for a while, but it took some intellectual courage to finally get it going. Up until recently, I felt that unless I could literally write a book on a subject, I simply didn’t know enough about it. In that case, why should I bother writing some dilettante ramblings? What good would that do to the reader?
@@ -9,8 +11,11 @@ I now understand this way of thinking is unfair, both to myself and to the reade
 
 A huge inspiration for finally kicking off this blog came from watching Adam Savage and Andy Weir’s interview. Andy Weir wrote the very successful sci-fi book _The Martian_, and amazingly, while he was doing research for his book, he had no contacts with anyone in NASA, or the entire aerospace industry for that matter. He relied on only books, and the internet! 
 
+
 {% raw %}
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5SemyzKgaUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 {% endraw %}
 
 During the interview, Weir talks about  how during the early research phases for his book, one great resource has been “amateur” websites - think of stuff in the flavor of BOB’S SPACE PAGE. 

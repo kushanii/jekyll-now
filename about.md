@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-I am an Electrical Engineer working at Microsoft Surface.
-The commentary on this website is my own and does not represent Microsoft.
+I am an Electrical Engineer working at Amazon on Project Kuiper. 
+The commentary on this website is my own and does not represent any present or past employers.
 
-### More Information
+### License
 
-I like tracksuits and making websites.
+Unless otherwise indicated, my work on this website is released under the [CC-BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 ### Contact me
 

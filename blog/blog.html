@@ -6,15 +6,18 @@ permalink: /blog/
 <h1> Blog Entries </h1>
 <div class="posts">
   {% for post in site.posts %}
+  {% if post.visible== 1  %}
     <article class="post">
 
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
+        <i>{{ post.date | date_to_long_string}}</i>
         {{ post.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
+  {% endif %}
   {% endfor %}
 </div>
