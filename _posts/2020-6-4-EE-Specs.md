@@ -64,7 +64,7 @@ So, what constitutes a “good” spec? I came up with something I call the Huaq
 
 The Huaqiangbei is an electronics market in Shenzen with a worldwide fame among electronics enthusiasts as a Grand Bazaar of Electronics. Now, I am Turkish, so this metaphor is all I need to understand the concept of Huaqiangbei, but for the non-Turks out there:
 
->Huaqiangbei is a bustling downtown bazaar: crowded streets, neon lights, sidewalk vendors, and chain smokers […] Drones whir, high-end gaming consoles flash, and customers inspect cases of chips. Someone bumbles by on a Hoverboard. A couple shops over, a cluster of kiosks hock knockoff smartphones at a deep discount. One saleswoman tries to sell me on an iPhone 6 that’s running Google’s Android operating system. Another pitches a shiny Huawei phone for about twenty dollars. [6]
+>Huaqiangbei is a bustling downtown bazaar: crowded streets, neon lights, sidewalk vendors, and chain smokers […] Drones whir, high-end gaming consoles flash, and customers inspect cases of chips. Someone bumbles by on a Hoverboard. A couple shops over, a cluster of kiosks hock knockoff smartphones at a deep discount. One saleswoman tries to sell me on an iPhone 6 that’s running Google’s Android operating system. Another pitches a shiny Huawei phone for about twenty dollars. [[6]](#iphone)
 
 In Huaqianbei, you can find pretty much any electronic product that you want. The place is full of skilled vendors and mom-and-pop engineering shops.
 
@@ -211,7 +211,7 @@ The IBM PC spec has an excellent preface that succinctly introduces us to the 39
 
 We actually began discussing Lesson 2 already, when we talked about the difficulty of coming up with chapters, sections, and sub-sections in the table of contents. At the heart of Lesson 2 is the following question: how do you break down the complexity of your design, such that the specification is easy to understand for the reader?
 
-The way human beings make sense of new knowledge is through layers of abstraction. Once those layers are identified, our brains start peeling away, and dividing and conquering the information in front of us. As the writer of the specification, you need to identify these layers of abstraction and communicate them to the reader. This can be a fine line to walk on. At every layer, you want to go into the appropriate level of detail. You do not want to gloss over details and risk being imprecise, yet you need to avoid overwhelming the reader with information that is not needed to achieve the level of understanding needed at that layer. This is what the discipline known as systems engineering is all about.
+The way human beings make sense of new knowledge is through layers of abstraction. Once those layers are identified, our brains start peeling away, and dividing and conquering the information in front of us. As the writer of the specification, you need to identify these layers of abstraction and communicate them to the reader. This can be a fine line to walk on. At every layer, you want to go into the appropriate level of detail. You do not want to gloss over details and risk being imprecise, yet you need to avoid overwhelming the reader with information that is not needed to achieve the level of understanding needed at that layer.
 
 How did the writers of the IBM PC spec tackle this task? I identified three levels of abstraction (Abstraction Levels 0,1,2) that serve as a good example of the right level of complexity to shoot for at each level.
 
@@ -414,7 +414,7 @@ A specification is about the architecture of an engineering system. It tells us 
 
 >The separation of architectural effort from implementation is a very powerful way of getting conceptual integrity on very large projects […] By the architecture of a system, I mean the complete and detailed specification of the user interface. For a computer this is the programming manual. For a compiler it is the language manual. For a control program it is the manuals for the language or languages used to invoke its functions. For the entire system it is the union of the manuals the user must consult to do his entire job.
 **The architect of a system, like the architect of a building, is the user's agent.** It is his job to bring professional and technical knowledge to bear in the unalloyed interest of the user, as opposed to the interests of the salesman, the fabricator, etc.
-Architecture must be carefully distinguished from implementation. As Blaauw has said, "Where architecture tells what happens, implementation tells how it is made to happen." He gives as a simple example a clock, whose architecture consists of the face, the hands, and the winding knob. When a child has learned this architecture, he can tell time as easily from a wristwatch as from a church tower. The implementation, however, and its realization, describe what goes on inside the case—powering by any of many mechanisms and accuracy control by any of many. [2]
+Architecture must be carefully distinguished from implementation. As Blaauw has said, "Where architecture tells what happens, implementation tells how it is made to happen." He gives as a simple example a clock, whose architecture consists of the face, the hands, and the winding knob. When a child has learned this architecture, he can tell time as easily from a wristwatch as from a church tower. The implementation, however, and its realization, describe what goes on inside the case—powering by any of many mechanisms and accuracy control by any of many. [[2]](#mmm)
 
 Users do not care about how features are implemented in your system. What they care is what your system can accomplish for them, which is what the specification is about. When you are writing your spec, you should not forget that you are the user's agent. When I was writing my spec, I included a section that gave the user’s story of how they would interact with the system we were specifying.
 
@@ -468,7 +468,7 @@ While you want to avoid full-blown, complex schematics in your specifications, u
  <br>
  
 {: .center}
-![Joystick blog diagram](/images/ee-specs/image022.png){:class="img-responsive"}{:width="80%"}
+![Joystick blog diagram](/images/ee-specs/image022.png){:class="img-responsive"}{:width="90%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 22: A simple joystick schematic. This is appropriate for a spec.*
@@ -506,7 +506,7 @@ To give your spec a chance to be read widely, you need to ensure the you have gr
 ![Spec horror](/images/ee-specs/image024.png){:class="img-responsive"}{:width="90%"}
 
 {:refdef: style="text-align: center;"}
-*Figure 24: Please promise me you won’t do this. [3]*
+*Figure 24: Please promise me you won’t do this. [[3]](https://datasheet.datasheetarchive.com/originals/crawler/antcom.com/9ec044cf132c90fd9bd7bbcf3b40c318.pdf)*
 {: refdef}
 
 <br>
@@ -567,7 +567,7 @@ Continuously track any changes you make to the document to make sure there are n
 ![International Docking Standard, revision tracking.](/images/ee-specs/image027.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
-*Figure 27: Revision tracking from the International Docking Adapter specification. [4]*
+*Figure 27: Revision tracking from the International Docking Adapter specification. [[4]](https://www.internationaldockingstandard.com/download/IDSS_IDD_Revision_E_TAGGED.pdf)*
 {: refdef}
 
 <br>
@@ -636,15 +636,17 @@ This was the first installment in my article series on things I did not learn in
  
 [1] [Laws of Tech : Commoditize Your Complement](https://www.gwern.net/Complement#2)
 
-[2] Brooks, Frederick P.. The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition. United States, Pearson Education, 1995.
+[2] [Brooks, Frederick P.. The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition. United States, Pearson Education, 1995](https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959/ref=sr_1_1?crid=1KRUN0TO6BQCM&dchild=1&keywords=the+mythical+man+month&qid=1591771115&sprefix=the+mythical+ma%2Caps%2C216&sr=8-1).
+{: #mmm}
 
-[3] Antcom L1/L2 GPS Antennas.
+[3] [Antcom L1/L2 GPS Antennas](https://datasheet.datasheetarchive.com/originals/crawler/antcom.com/9ec044cf132c90fd9bd7bbcf3b40c318.pdf).
 
-[4] International Docking Standard (IDSS), Interface Definition Document (IDD), Revision E,  2016.
+[4] [International Docking Standard (IDSS), Interface Definition Document (IDD), Revision E,  2016](https://www.internationaldockingstandard.com/download/IDSS_IDD_Revision_E_TAGGED.pdf).
 
 [5] [Documenting Poorly Documented LED Strips](https://hackaday.com/2015/04/12/documenting-poorly-documented-led-strips/#more-152513)
 
-[6] Merchant, Brian. The One Device: The Secret History of the iPhone. United States, Little, Brown, 2017.
+[6] [Merchant, Brian. The One Device: The Secret History of the iPhone. United States, Little, Brown, 2017](https://www.amazon.com/The-One-Device-Brian-Merchant-audiobook/dp/B072QDKDRR/ref=sr_1_1?dchild=1&keywords=the+one+device&qid=1591771164&sr=8-1).
+{: #iphone}
 
 ----
 ****
