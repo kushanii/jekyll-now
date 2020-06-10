@@ -7,12 +7,16 @@ visible: 0
 
 About nine months ago, when I was still working at Microsoft as an electrical engineer on the Surface team, my manager asked me to write a specification for the project I was working on.
 
+<br>
+
 {: .center}
 ![My teacher.](/images/ee-specs/image001.jpg){:class="img-responsive"}{:width="70%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 1: My teacher. Photo by [Ruben de Rijcke](https://en.wikipedia.org/wiki/IBM_Personal_Computer#/media/File:Ibm_pc_5150.jpg)*
 {: refdef}
+
+<br>
 
 I was surprised by her request since most specifications (known also as “specs”) were written by engineers with much more seniority than me. The systems engineer responsible for my project had just quit, and because I was my team’s expert on my project, my manager was asking me to fill in for the departed systems engineer. I accepted, without fully understanding what I was getting myself into.
 
@@ -47,12 +51,16 @@ I thought hard about what actually made me change my mind about specs, and I can
 
 So, what constitutes a “good” spec? I came up with something I call the Huaqiangbei Test to explore this question. It is my goal with this article to help your electrical engineering specs pass the Huaqianbei Test.
 
+<br>
+
 {: .center}
-![Huaqiangbei.](/images/ee-specs/image002.jpg){:class="img-responsive"}{:width="70%"}
+![Huaqiangbei.](/images/ee-specs/image002.jpg){:class="img-responsive"}{:width="75%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 2: the Huaqiangbei in Shenzen, China. Photo by [Tocha](https://medium.com/chinafacture/huaqiangbei-the-biggest-electronics-market-in-the-world-shenzhen-china-3ec66e5d2df0)*
 {: refdef}
+
+<br>
 
 The Huaqiangbei is an electronics market in Shenzen with a worldwide fame among electronics enthusiasts as a Grand Bazaar of Electronics. Now, I am Turkish, so this metaphor is all I need to understand the concept of Huaqiangbei, but for the non-Turks out there:
 
@@ -86,12 +94,16 @@ Many specifications and test standards from the U.S Military, DoD and NASA are p
 
 I ended up finding something that fit the bill perfectly – the 39-year old specification for the original IBM PC! 
 
+<br>
+
 {: .center}
-![Huaqiangbei.](/images/ee-specs/image003.jpg){:class="img-responsive"}{:width="70%"}
+![A boy using an IBM PC.](/images/ee-specs/image003.jpg){:class="img-responsive"}{:width="75%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 3: The IBM PC 5150, released in 1981. Photo by [Engelbert Reineke](https://en.wikipedia.org/wiki/IBM_Personal_Computer#/media/File:Bundesarchiv_B_145_Bild-F077948-0006,_Jugend-Computerschule_mit_IBM-PC.jpg)*
 {: refdef}
+
+<br>
 
 ## The IBM PC spec
 
@@ -137,35 +149,46 @@ In the end, I decided to organize the information in my spec along the lines of 
 
 The ToC can and should get tweaked as you now write the body of your spec, but I found that having a first version of the ToC figured out before diving into the writing process helped me a lot to smash writer’s block, and make quick progress.
 
+<br>
+
 {: .center}
-![IBM PC Spec - Table of contents.](/images/ee-specs/image004.png){:class="img-responsive"}{:width="70%"}
+![IBM PC Spec - Table of contents.](/images/ee-specs/image004.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 4: Table of contents from the IBM PC specification.*
 {: refdef}
 
+<br>
+
 The designers of the IBM PC have done a good job setting up their table of contents. They start with a short section called “Hardware Overview”, which is only four pages long. At first, I was puzzled as to why they would make an entire section this short, but I understand this now as a powerful technique. The Hardware Overview section tells the reader what information they need to fully absorb before they can proceed to reading the rest of the specification. The reader mentally comes to a pause when they see that a whole section has ended, which I think would make them reflect and make sure they understood what they just read.
 
 The second section is called “Hardware”. This is a long section with 100+ pages, and it is broken down into subsections based on major hardware components (e.g. system board, keyboard, monitor).
 
+<br>
+
 {: .center}
-![Subsections within the hardware section.](/images/ee-specs/image005.png){:class="img-responsive"}{:width="70%"}
+![Subsections within the hardware section.](/images/ee-specs/image005.png){:class="img-responsive"}{:width="75%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 5: Subsections within the hardware section.*
 {: refdef}
 
+<br>
 
 The third section is called “ROM and System Usage”. I like to think of this section as the “Software” section, even though it is not named as such. This section describes low-level software functions such as the BIOS, interrupt vectors, memory maps, and keyboard encodings. We can see that this section is meant for describing the interface between the hardware and software and will primarily be used by the programmers of operating systems.
 
-When specifying a computer, a table of contents that splits the organization into hardware and software makes sense. Could there have been other ways of setting up the table of contents? Maybe. Perhaps the system board could have been a chapter on its own, since it is such an important component, and Section 3 could have been merged with the new System Board section, since BIOS and low level software run on the system board. However, this would mean that OS programmers who want to reference the specification would have to skip over detailed hardware descriptions every time they have to look up software information in the spec. Since engineers in the real world today divide themselves into hardware and software engineers, I think it makes more sense to divide the chapters in the specification in that way too. Thinking about how your spec will be referenced by your audience is an example of the empathy that the writer needs to have towards the reader and make the spec most useful to them – an important point we will discuss further in Lesson 6.
+When specifying a computer, a table of contents that splits the organization into hardware and software makes sense. Could there have been other ways of setting up the table of contents? Maybe. Perhaps the system board could have been a chapter on its own, since it is such an important component, and Section 3 could have been merged with the new System Board section, since BIOS and low level software run on the system board. However, this would mean that OS programmers who want to reference the specification would have to skip over detailed hardware descriptions every time they have to look up software information in the spec. Since computer engineers divide themselves into hardware and software engineers, I think it makes more sense to divide the chapters in the specification in that way too. Thinking about how your spec will be referenced by your audience is an example of the empathy that the writer needs to have towards the reader and make the spec most useful to them – an important point we will discuss further in Lesson 6.
+
+<br>
 
 {: .center}
-![Another page from the table of contents.](/images/ee-specs/image006.png){:class="img-responsive"}{:width="70%"}
+![Another page from the table of contents.](/images/ee-specs/image006.png){:class="img-responsive"}{:width="75%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 6: Another page from the table of contents.*
 {: refdef}
+
+<br>
 
 ### The Preface
 
@@ -173,12 +196,16 @@ Even a short specification should have a preface. The preface goes hand in hand 
 
 The IBM PC spec has an excellent preface that succinctly introduces us to the 393-page document in front of us.
 
+<br>
+
 {: .center}
-![A preface](/images/ee-specs/image007.png){:class="img-responsive"}{:width="70%"}
+![A preface](/images/ee-specs/image007.png){:class="img-responsive"}{:width="75%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 7: A preface is a great way to introduce the reader to their quest in understanding your system.*
 {: refdef}
+
+<br>
 
 ## Lesson 2: Maintain a systems-centric view of your design, at all levels
 
@@ -193,7 +220,7 @@ At Abstraction Level 0, we have the hardware overview given at Section 1. This i
 <br>
 
 {: .center}
-![Abstraction Level 0](/images/ee-specs/image008.png){:class="img-responsive"}{:width="70%"}
+![Abstraction Level 0](/images/ee-specs/image008.png){:class="img-responsive"}{:width="75%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 8: Abstraction Level 0, where we get an overview, and marketing-level specifications.*
@@ -204,10 +231,10 @@ At Abstraction Level 0, we have the hardware overview given at Section 1. This i
 <br>
 
 {: .center}
-![Floppy disk](/images/ee-specs/image009.jpg){:class="img-responsive"}{:width="70%"}
+![Floppy disk](/images/ee-specs/image009.jpg){:class="img-responsive"}{:width="60%"}
 
 {:refdef: style="text-align: center;"}
-*Figure 9: A 5 ¼ ‘’ Diskette. Contrary to the popular belief, this is not a 3D printed save icon 😉 TODO!!CITATION*
+*Figure 9: A 5 ¼ ‘’ Diskette. Contrary to the popular belief, this is not a 3D printed save icon 😉 Photo by [Theo Curmudgeon](https://www.flickr.com/photos/22457710@N00/252074409)*
 {: refdef}
 
 <br>
@@ -229,7 +256,7 @@ This level of detail corresponds to about as much as a “power user” would li
 <br>
 
 {: .center}
-![Abstraction Level 1](/images/ee-specs/image010.png){:class="img-responsive"}{:width="70%"}
+![Abstraction Level 1](/images/ee-specs/image010.png){:class="img-responsive"}{:width="75%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 10: Abstraction Level 1, where we start getting real engineering details.*
@@ -250,7 +277,7 @@ While this lesson in finding the appropriate levels of abstraction and the level
 <br>
 
 {: .center}
-![Abstraction Level 2](/images/ee-specs/image011.png){:class="img-responsive"}{:width="70%"}
+![Abstraction Level 2](/images/ee-specs/image011.png){:class="img-responsive"}{:width="75%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 11: Abstraction Level 2. Getting even more electrical engineering details now.*
@@ -269,7 +296,7 @@ In the IBM PC block diagram, there is a visual sense of what each block physical
 <br>
 
 {: .center}
-![IBM PC block diagram](/images/ee-specs/image012.png){:class="img-responsive"}{:width="70%"}
+![IBM PC block diagram](/images/ee-specs/image012.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 12: IBM PC’s block diagram. Easy on the eyes, and easy to understand. This is a good “Abstraction Level 0” block diagram.*
@@ -282,7 +309,7 @@ The Diskette Drive block diagram below is appropriate for Abstraction Level 2. A
 <br>
 
 {: .center}
-![Floppy drive block diagram](/images/ee-specs/image013.png){:class="img-responsive"}{:width="70%"}
+![Floppy drive block diagram](/images/ee-specs/image013.png){:class="img-responsive"}{:width="90%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 13: An " Abstraction Level 2" block diagram for the Diskette Drive.*
@@ -299,10 +326,10 @@ The worse offenders of unreadable diagrams are the Chinglish data sheets from no
 <br>
 
 {: .center}
-![Ground your pixels](/images/ee-specs/image014.png){:class="img-responsive"}{:width="70%"}
+![Ground your pixels](/images/ee-specs/image014.png){:class="img-responsive"}{:width="85%"}
 
 {:refdef: style="text-align: center;"}
-*Figure 14: "Make sure to connect your pixels to ground". [5]*
+*Figure 14: "Make sure to connect your pixels to ground". [[5]](https://hackaday.com/2015/04/12/documenting-poorly-documented-led-strips/#more-152513)*
 {: refdef}
 
 <br>
@@ -313,10 +340,10 @@ Sadly, large semiconductor companies are guilty of block diagram pixel art too:
 <br>
 
 {: .center}
-![Lattice Semi Datasheet](/images/ee-specs/image015.png){:class="img-responsive"}{:width="70%"}
+![Lattice Semi Datasheet](/images/ee-specs/image015.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
-*Figure 15: Whoa. There is a lot going on, let's zoom in.*
+*Figure 15: Whoa. There is a lot going on, [let's zoom in.](https://www.latticesemi.com/-/media/LatticeSemi/Documents/ApplicationNotes/AD/DSPFunctionUsageGuideforICE40Devices.ashx?document_id=50669)*
 {: refdef}
 
 <br>
@@ -325,7 +352,7 @@ Sadly, large semiconductor companies are guilty of block diagram pixel art too:
 <br>
 
 {: .center}
-![Lattice Semi Datasheet, zoomed in and pixelated](/images/ee-specs/image016.png){:class="img-responsive"}{:width="70%"}
+![Lattice Semi Datasheet, zoomed in and pixelated](/images/ee-specs/image016.png){:class="img-responsive"}{:width="75%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 16: 16x16 = 32??? [From Twitter user @oe1cxw](https://twitter.com/oe1cxw/status/1097821398490320896)*
@@ -339,12 +366,12 @@ The block diagram is a map - a way for you to put the reader’s visual cortex i
 
 It is so important to describe, in detail, the interfaces between the subsystems of your design. These interfaces are prime breeding grounds for bugs, and your efforts to painstakingly specify the interactions between your subsystems will allow you to catch bugs before they have a chance to appear.
 
-The writers of the IBM PC spec went to great lengths to capture their interfaces. Figure 15 shows how data flows within the system board. Even though making a full data flow diagram could be hard for complicated modern designs, at the very least you should make power trees and clock trees. The power tree shows how power flows in your design, and the clock tree shows where your subsystems get their clocks from.
+The writers of the IBM PC spec went to great lengths to capture their interfaces. Figure 17 shows how data flows within the system board. Even though making a full data flow diagram could be hard for complicated modern designs, at the very least you should make power trees and clock trees. The power tree shows how power flows in your design, and the clock tree shows where your subsystems get their clocks from.
 
  <br>
 
 {: .center}
-![IBM PC motherboard data flow](/images/ee-specs/image017.png){:class="img-responsive"}{:width="70%"}
+![IBM PC motherboard data flow](/images/ee-specs/image017.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 17: Capturing how data flows within the system board.*
@@ -357,7 +384,7 @@ Figure 18 is a good example on how to describe signals at an interface. This is 
  <br>
  
 {: .center}
-![Parallel port signals description](/images/ee-specs/image018.png){:class="img-responsive"}{:width="70%"}
+![Parallel port signals description](/images/ee-specs/image018.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 18: Parallel port signals going to the dot matrix printer are described.*
@@ -374,7 +401,7 @@ Figure 19 is cool, because the Pin 1 location of the Diskette Drive Adapter is l
 ![Floppy disk Pin 1](/images/ee-specs/image019.png){:class="img-responsive"}{:width="70%"}
 
 {:refdef: style="text-align: center;"}
-*Figure 19: Describing the mechanical interfaces will help catch Pin 1 bugs!*
+*Figure 19: Illustrating your mechanical interfaces will help catch Pin 1 bugs!*
 {: refdef}
 
 <br>
@@ -383,25 +410,19 @@ Figure 19 is cool, because the Pin 1 location of the Diskette Drive Adapter is l
 
 Now is a good time to meditate on what exactly it is that we are trying to accomplish when we write a specification.
 
-A specification is about the architecture of an engineering system. It is about how an overarching system emerges from numerous subsystems. The specification needs to be agnostic of the implementation.
-
-This quote from the famous book The Mythical Man Month explains beautifully what we mean by the distinctness of the architecture, and the implementation (emphasis is mine):
+A specification is about the architecture of an engineering system. It tells us how an overarching system emerges from numerous subsystems. For a specification to be effective, it needs to be agnostic of the implementation. This quote from the famous book *The Mythical Man Month* explains beautifully what we mean by the distinctness of the architecture, and the implementation (emphasis is mine):
 
 >The separation of architectural effort from implementation is a very powerful way of getting conceptual integrity on very large projects […] By the architecture of a system, I mean the complete and detailed specification of the user interface. For a computer this is the programming manual. For a compiler it is the language manual. For a control program it is the manuals for the language or languages used to invoke its functions. For the entire system it is the union of the manuals the user must consult to do his entire job.
-The architect of a system, like the architect of a building, is the user's agent. It is his job to bring professional and technical knowledge to bear in the unalloyed interest of the user, as opposed to the interests of the salesman, the fabricator, etc.
+**The architect of a system, like the architect of a building, is the user's agent.** It is his job to bring professional and technical knowledge to bear in the unalloyed interest of the user, as opposed to the interests of the salesman, the fabricator, etc.
 Architecture must be carefully distinguished from implementation. As Blaauw has said, "Where architecture tells what happens, implementation tells how it is made to happen." He gives as a simple example a clock, whose architecture consists of the face, the hands, and the winding knob. When a child has learned this architecture, he can tell time as easily from a wristwatch as from a church tower. The implementation, however, and its realization, describe what goes on inside the case—powering by any of many mechanisms and accuracy control by any of many. [2]
 
-Users do not care about how features are implemented in your system. What they care is what your system can accomplish for them, which is what the specification is about.
+Users do not care about how features are implemented in your system. What they care is what your system can accomplish for them, which is what the specification is about. When you are writing your spec, you should not forget that you are the user's agent. When I was writing my spec, I included a section that gave the user’s story of how they would interact with the system we were specifying.
 
-A hallmark shared by many poorly written specifications is their mixing between the implementation and the architecture. Making sure that you leave out detailed schematics in your specification, and that you include narrative descriptions of what your product is accomplishing is the best way to keep your spec true to its purpose. When I was writing my spec, I included a section that gave the user’s story of how they would interact with the system we were specifying.
-
-Divorcing implementation and separation is yet another area where the IBM PC spec shines. The only place where you will find detailed schematics is the appendix. They stuck to using off-the-shelf parts as much as possible (e.g 74LS244 buffers), which helps to split specification and implementation. A common way for implementation to sneak into the specification is the usage of poorly specified, proprietary parts. These parts become black holes to the readers, which eventually force them to make frustrated calls to Field Applications Engineers supporting those parts.
-
-<br>
+Divorcing implementation and separation is yet another area where the IBM PC spec shines. The only place where you will find detailed schematics is the appendix. They stuck to using off-the-shelf parts as much as possible (e.g 74LS244 buffers), which helps to split specification and implementation. A common way for implementation to sneak into the specification is the usage of poorly specified, proprietary parts. These parts become black holes to the readers, which eventually force them to make frustrated calls to Field Applications Engineers supporting those parts, reducing the value of the spec document in the process.
 
 ## Lesson 5: Follow good electrical specification practices
 
-In the first three lessons, we already touched upon some good examples of how to specify electrical parameters. I praised the interface description in Figure 12, and the electrical block diagram in Figure 10. Here are some more good examples from the IBM PC spec.
+In the first three lessons, we already touched upon some good examples of how to specify electrical parameters. I praised the interface description in Figure 18, and the electrical block diagram in Figure 13. Here are some more good examples from the IBM PC spec.
 
 ### Specify your off the shelf components
 
@@ -415,7 +436,7 @@ Neglecting this step is a recipe for weird bugs that appear seemingly randomly d
  <br>
  
 {: .center}
-![Specifying Floppy disks](/images/ee-specs/image020.png){:class="img-responsive"}{:width="70%"}
+![Specifying Floppy disks](/images/ee-specs/image020.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 20: IBM PC designers meticulously specified their 5 ¼’’ diskettes.*
@@ -426,13 +447,13 @@ Neglecting this step is a recipe for weird bugs that appear seemingly randomly d
 
 ### Make good electrical block diagrams
 
-We already saw an electrical block diagram example in Figure 10. Here is another in Figure 15. Notice how this diagram contains more electrical details than a typical block diagram, but it is not quite a schematic, and it does not need to be. Electrical components such as D-latches and the 74LS322 shift register are represented as functional blocks only. After understanding this block diagram, the reader will have a much easier time reading the schematic for the keyboard interface.
+We already saw an electrical block diagram example in Figure 10. Here is another in Figure 21. Notice how this diagram contains more electrical details than a typical block diagram, but it is not quite a schematic, and it does not need to be. Electrical components such as D-latches and the 74LS322 shift register are represented as functional blocks only. After understanding this block diagram, the reader will have a much easier time reading the schematic for the keyboard interface.
 
 
  <br>
  
 {: .center}
-![Another EE block diagram example](/images/ee-specs/image021.png){:class="img-responsive"}{:width="70%"}
+![Another EE block diagram example](/images/ee-specs/image021.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 21: Another electrical block diagram example.*
@@ -447,7 +468,7 @@ While you want to avoid full-blown, complex schematics in your specifications, u
  <br>
  
 {: .center}
-![Joystick blog diagram](/images/ee-specs/image022.png){:class="img-responsive"}{:width="70%"}
+![Joystick blog diagram](/images/ee-specs/image022.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 22: A simple joystick schematic. This is appropriate for a spec.*
@@ -457,14 +478,14 @@ While you want to avoid full-blown, complex schematics in your specifications, u
 
 ### Include tolerances for the parameters you specify
 
-State tolerances for any of the parameters you give in your document. An example of this for the IBM PC’s power supply is given in Figure 23.
+State tolerances for any of the parameters you give in your document, just like in Figure 23 below.
 
 A common mistake here is ambiguity with regard to “nominal” specs. Even datasheets from large semiconductor companies can sometime be guilty of this. How was the nominal measured? What operating temperature is being assumed at nominal conditions? 
 
  <br>
  
 {: .center}
-![Parameter tolerances](/images/ee-specs/image023.png){:class="img-responsive"}{:width="70%"}
+![Parameter tolerances](/images/ee-specs/image023.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 23: Specify tolerances for your parameters.*
@@ -482,7 +503,7 @@ To give your spec a chance to be read widely, you need to ensure the you have gr
  <br>
  
 {: .center}
-![Spec horror](/images/ee-specs/image024.png){:class="img-responsive"}{:width="70%"}
+![Spec horror](/images/ee-specs/image024.png){:class="img-responsive"}{:width="90%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 24: Please promise me you won’t do this. [3]*
@@ -490,7 +511,7 @@ To give your spec a chance to be read widely, you need to ensure the you have gr
 
 <br>
 
-From my own experience as a reader of specs, adding the sections I listed below will drastically increase the value of your specification document. They all build a support structure in your document for the benefit of your reader.
+From my own experience as a reader of specs, adding the sections I listed below will greatly increase the value of your specification document.
 
 ### The Appendix
 
@@ -502,13 +523,13 @@ Some good ideas for appendices:
 
 -        Quick reference information. An example of this is how the IBM PC spec included the assembly instruction set for the Intel 8086.
 
--        Any checklists, quick start guides, or recommended design workflows for designers that would be working with the system that you specified.
+-        Any checklists, quick start guides, or recommended design workflows for designers that would be working with your system.
 
 
  <br>
  
 {: .center}
-![IBM PC spec appendix](/images/ee-specs/image025.png){:class="img-responsive"}{:width="70%"}
+![IBM PC spec appendix](/images/ee-specs/image025.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 25: Appendices included with the IBM PC spec.*
@@ -524,7 +545,7 @@ The glossary makes sure that the reader and the writer are on the same page when
  <br>
  
 {: .center}
-![IBM PC spec glossary](/images/ee-specs/image026.png){:class="img-responsive"}{:width="70%"}
+![IBM PC spec glossary](/images/ee-specs/image026.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 26: Glossary from the IBM PC spec.*
@@ -543,7 +564,7 @@ Continuously track any changes you make to the document to make sure there are n
  <br>
  
 {: .center}
-![International Docking Standard, revision tracking.](/images/ee-specs/image027.png){:class="img-responsive"}{:width="70%"}
+![International Docking Standard, revision tracking.](/images/ee-specs/image027.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 27: Revision tracking from the International Docking Adapter specification. [4]*
@@ -559,7 +580,7 @@ List of Figures and List of Tables are great for easy reference.
  <br>
  
 {: .center}
-![IBM PC Spec, list of figures](/images/ee-specs/image028.png){:class="img-responsive"}{:width="70%"}
+![IBM PC Spec, list of figures](/images/ee-specs/image028.png){:class="img-responsive"}{:width="80%"}
 
 {:refdef: style="text-align: center;"}
 *Figure 28: List of figures from the IBM PC spec.*
@@ -605,7 +626,7 @@ Many of the industry standard EE specifications are public. Studying industry sp
 
 ### NASA specs
 
-NASA and many of the other bodies in the aerospace industry publish their specs, which can make for great learning material. I especially like the International Docking Adapter specification, which specifies how spacecraft need to have their docking interface built in order to attach to the International Space Station. It is a great example of how to specify interfaces between systems really well.
+NASA and many of the other organizations in the aerospace industry publish their specs, which can make for great learning material. I especially like the [International Docking Adapter specification](https://www.internationaldockingstandard.com/download/IDSS_IDD_Revision_E_TAGGED.pdf), which specifies how spacecraft need to have their docking interface built in order to attach to the International Space Station. It is a great example of how to specify interfaces between systems.
 
 ## Article series
 
