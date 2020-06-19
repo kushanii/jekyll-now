@@ -1,4 +1,4 @@
-I"��<p>About nine months ago, when I was still working at Microsoft as an electrical engineer on the Surface team, my manager asked me to write a specification for the project I was working on.</p>
+I"��<p>About nine months ago, when I was still working at Microsoft as an electrical engineer on the Surface team, my manager asked me to write a specification for the project I was working on.</p>
 
 <p><br /></p>
 
@@ -26,7 +26,29 @@
 
 <p>The sentiment above is still common in the technology industry, which I think is a shame. After three years in the industry, I have changed my mind, and now believe that a having good specs is critical for making your project a success.</p>
 
-<h2 id="what-even-is-a-good-specification-or-the-huaqiangbei-test">What even is a good specification, or the Huaqiangbei test</h2>
+<h2 id="table-of--contents">Table of  Contents</h2>
+
+<p><a href="#chapter1">What even is a good specification, or the Huaqiangbei test</a></p>
+
+<p><a href="#chapter2">Trying to find the shoulders of giants</a></p>
+
+<p><a href="#chapter3">The IBM PC spec</a></p>
+
+<p><a href="#chapter4">Lesson 1: Write your table of contents carefully</a></p>
+
+<p><a href="#chapter5">Lesson 2: Maintain a systems-centric view of your design, at all levels</a></p>
+
+<p><a href="#chapter6">Lesson 3: Clearly capture the interfaces within the design</a></p>
+
+<p><a href="#chapter7">Lesson 4: Do not mix implementation with specification</a></p>
+
+<p><a href="#chapter8">Lesson 5: Follow good electrical specification practices</a></p>
+
+<p><a href="#chapter9">Lesson 6: Think of how you can support the reader</a></p>
+
+<p><a href="#chapter10">Wrapping up, and further resources</a></p>
+
+<h2 id="chapter1">What even is a good specification, or the Huaqiangbei test</h2>
 
 <p>I thought hard about what actually made me change my mind about specs, and I can boil it down to the following:</p>
 
@@ -55,7 +77,7 @@
 <p>The Huaqiangbei is an electronics market in Shenzen with a worldwide fame among electronics enthusiasts as a Grand Bazaar of Electronics. Now, I am Turkish, so this metaphor is all I need to understand the concept of Huaqiangbei, but for the non-Turks out there:</p>
 
 <blockquote>
-  <p>Huaqiangbei is a bustling downtown bazaar: crowded streets, neon lights, sidewalk vendors, and chain smokers […] Drones whir, high-end gaming consoles flash, and customers inspect cases of chips. Someone bumbles by on a Hoverboard. A couple shops over, a cluster of kiosks hock knockoff smartphones at a deep discount. One saleswoman tries to sell me on an iPhone 6 that’s running Google’s Android operating system. Another pitches a shiny Huawei phone for about twenty dollars. [6]</p>
+  <p>Huaqiangbei is a bustling downtown bazaar: crowded streets, neon lights, sidewalk vendors, and chain smokers […] Drones whir, high-end gaming consoles flash, and customers inspect cases of chips. Someone bumbles by on a Hoverboard. A couple shops over, a cluster of kiosks hock knockoff smartphones at a deep discount. One saleswoman tries to sell me on an iPhone 6 that’s running Google’s Android operating system. Another pitches a shiny Huawei phone for about twenty dollars. <a href="#iphone">[6]</a></p>
 </blockquote>
 
 <p>In Huaqianbei, you can find pretty much any electronic product that you want. The place is full of skilled vendors and mom-and-pop engineering shops.</p>
@@ -70,13 +92,13 @@
     <p>If the Huaqianbei folk were able to re-create your product without input from the designers, or without having to resort to reverse engineering an existing product, you have succeeded in writing a specification that stands on its own.</p>
   </li>
   <li>
-    <p>The Huaquanbei engineer’s native language is not English. So, you need to really make sure that your spec is clear by avoiding convoluted language, in addition to relying on well-made diagrams and tables. (This imaginary test notwithstanding, modern technology teams have many immigrant members, who may not be as comfortable in English, so this point is actually really, really important).</p>
+    <p>The Huaquanbei engineer’s native language is not English. So, you need to really make sure that your spec is clear by avoiding convoluted language, in addition to relying on well-made diagrams and tables. (This imaginary test notwithstanding, modern teams in the tech industry tend to have many immigrant members who may not have full mastery of written English, so this point is actually really, really important).</p>
   </li>
 </ul>
 
 <p>The rest of this article is what I wish I had known about writing specifications when I graduated from school. We are going to talk about how I learned to write specs, and how I can help you make sure that the specifications you write for your electrical engineering projects can pass the Huaqianbei test.</p>
 
-<h2 id="trying-to-find-the-shoulders-of-giants">Trying to find the shoulders of giants</h2>
+<h2 id="chapter2">Trying to find the shoulders of giants</h2>
 
 <p>After I got my spec writing assignment from my manager, I decided to start by finding examples of specifications to read. I read a number of internal Surface specifications. While those specs were overall very well written, and immensely helpful, I still wanted to read specs written by other companies. I am always mindful about not being trapped in a group-think situation, and I wanted to see what else was out there.</p>
 
@@ -86,10 +108,10 @@
 
 <ol>
   <li>
-    <p>The system that the specification was written for should be an electrical, or electro-mechanical system. While software design documents are interesting, as an electrical engineer I wanted to see something … electrical.</p>
+    <p>The system that the specification was written for should be an electrical, or electro-mechanical system. While software design documents are interesting, as an electrical engineer I wanted to see something … <em>electrical</em>.</p>
   </li>
   <li>
-    <p>I wanted to be reasonably familiar with the system that the spec was written for. The spec should be understandable to me without spending too much effort. The specs for electron tubes do not make for ideal learning material.</p>
+    <p>I wanted to be reasonably familiar with the system that the spec was written for. The spec should be understandable to me without spending too much effort. The specs for <a href="http://everyspec.com/MIL-SPECS/MIL-SPECS-MIL-E/MIL-E-1K_28303/">electron tubes</a> do not make for ideal learning material.</p>
   </li>
   <li>
     <p>Bonus points if the spec was written for a product that I used personally.</p>
@@ -106,9 +128,9 @@
 
 <p><br /></p>
 
-<h2 id="the-ibm-pc-spec">The IBM PC spec</h2>
+<h2 id="chapter3">The IBM PC spec</h2>
 
-<p>When I say IBM PC specification, I am actually referring to the user manual for the IBM PC, which is as good as a full engineering specification.</p>
+<p>When I say IBM PC specification, I am actually referring to the user manual for the IBM PC, which is essentially a full engineering specification.</p>
 
 <p>The IBM PC was released at dawn of the personal computer age, back when the <a href="https://en.wikipedia.org/wiki/Hacker_culture">hacker culture</a> seeped even into IBM. Computers were seen as highly sophisticated machines, and they came with amazingly detailed manuals compared to what you get when you buy a computer today. It was common to get a schematic for the computer you bought, for example. Apple II’s schematics could be found in its manual. The IBM PC manual even had the source code for its BIOS. Could you imagine all that today?</p>
 
@@ -133,17 +155,17 @@
 <p style="text-align: center;"><strong>Lesson 5: Follow good electrical specification practices.</strong></p>
 <p style="text-align: center;"><strong>Lesson 6: Think of how you can support the reader.</strong></p>
 
-<h2 id="lesson-1-write-your-table-of-contents-carefully">Lesson 1: Write your table of contents carefully.</h2>
+<h2 id="chapter4">Lesson 1: Write your table of contents carefully.</h2>
 
 <p>The way the table of contents (ToC) is written will bias the reader’s understanding of the system. It is critical that table of contents is organized in a way that makes sense given how the system works.</p>
 
 <p>When I was writing my specification, I wrote the ToC first before writing anything for the body of the specification. I found the ToC to be the hardest piece of the specification to write. Why? Because the ToC directly captures the writer’s understanding of how the whole system is composed of parts, and how those parts need to come together to grasp the workings of the whole. Writing the ToC is like writing an outline for your spec.</p>
 
-<p>My spec was about the interaction of two systems, which I will call the Transmitter and the Receiver. The Transmitter provides power to the Receiver, and there is bidirectional data flow between the two. I spent a few days just coming up with the highest level of organization, which would directly determine how I would title my chapters. Should I make the Transmitter device the centerpiece of the discussion, or should I make the Transmitter and Receiver equal citizens? Perhaps, my chapters should be titled Data Transfer and Power Transfer instead of the Transmitter or the Receiver – after all, the value this system provides comes from the transfer of energy and data between the two subsystems. I kept having conversations in my head about which approach was right, which was frustrating because I was feeling like I was not making real progress on my writing, but I knew that getting to a ToC that made sense to both me and to the reader was crucial.</p>
+<p>My spec was about the interaction of two systems, which I will call the Transmitter and the Receiver. The Transmitter provides power to the Receiver, and there is bidirectional data flow between the two. I spent a few days just coming up with the highest level of organization, which would directly determine how I would title my chapters. Should I make the Transmitter device the centerpiece of the discussion, or should I make the Transmitter and Receiver equal citizens? Perhaps, my chapters should be titled Data Transfer and Power Transfer instead of the Transmitter or the Receiver – after all, the value this system provides comes from the transfer of energy and data between the two subsystems. I kept having conversations in my head about which approach was right, which was frustrating because I was feeling like I was not making real progress on my writing, but I knew that getting to a ToC that made sense to both me and to the reader was crucial. In the end, I decided to organize the information in my spec along the lines of Transmitter and the Receiver.</p>
 
-<p>In the end, I decided to organize the information in my spec along the lines of Transmitter and the Receiver. The reasons as to why I made this decision is beyond the scope of this article, but I hope I made my point – there might be multiple valid ways to structure your table of contents, so you need to be prepared to spend a great deal of time drafting your ToC. After you figure out what your chapters, sections, subsections, and sub-subsections will be, reviewing your ToC by a few trusted colleagues will be immensely helpful.</p>
+<p>Just like my example above, there might be multiple valid ways to structure your table of contents, so you need to be prepared to spend a good chunk of your time drafting the ToC. After you figure out what your chapters, sections, subsections, and sub-subsections will be, reviewing your ToC by a few trusted colleagues will be immensely helpful.</p>
 
-<p>The ToC can and should get tweaked as you now write the body of your spec, but I found that having a first version of the ToC figured out before diving into the writing process helped me a lot to smash writer’s block, and make quick progress.</p>
+<p>The ToC can and should get tweaked as you now write the rest of your spec, but I found that having a first version of the ToC figured out before diving into the writing process helped me a lot to smash writer’s block.</p>
 
 <p><br /></p>
 
@@ -191,11 +213,11 @@
 
 <p><br /></p>
 
-<h2 id="lesson-2-maintain-a-systems-centric-view-of-your-design-at-all-levels">Lesson 2: Maintain a systems-centric view of your design, at all levels</h2>
+<h2 id="chapter5">Lesson 2: Maintain a systems-centric view of your design, at all levels</h2>
 
 <p>We actually began discussing Lesson 2 already, when we talked about the difficulty of coming up with chapters, sections, and sub-sections in the table of contents. At the heart of Lesson 2 is the following question: how do you break down the complexity of your design, such that the specification is easy to understand for the reader?</p>
 
-<p>The way human beings make sense of new knowledge is through layers of abstraction. Once those layers are identified, our brains start peeling away, and dividing and conquering the information in front of us. As the writer of the specification, you need to identify these layers of abstraction and communicate them to the reader. This can be a fine line to walk on. At every layer, you want to go into the appropriate level of detail. You do not want to gloss over details and risk being imprecise, yet you need to avoid overwhelming the reader with information that is not needed to achieve the level of understanding needed at that layer. This is what the discipline known as systems engineering is all about.</p>
+<p>The way human beings make sense of new knowledge is through layers of abstraction. Once those layers are identified, our brains start peeling away, and dividing and conquering the information in front of us. As the writer of the specification, you need to identify these layers of abstraction and communicate them to the reader. This can be a fine line to walk on. At every layer, you want to go into the appropriate level of detail. You do not want to gloss over details and risk being imprecise, yet you need to avoid overwhelming the reader with information that is not needed to achieve the level of understanding needed at that layer.</p>
 
 <p>How did the writers of the IBM PC spec tackle this task? I identified three levels of abstraction (Abstraction Levels 0,1,2) that serve as a good example of the right level of complexity to shoot for at each level.</p>
 
@@ -298,13 +320,13 @@
 
 <p>While a block diagram is usually a good guide for your readers, it can lead them down a path of confusion if you are not careful. Many block diagrams try to cram too much information – a common offense that has especially been made worse with diagrams that were never meant to be printed. The older block diagrams I came across during my research were hand drawn and were always meant to reside on a piece of paper. This guaranteed a certain degree of simplicity. When the writer only ever sees their block diagram on a screen, it becomes easier for them to add more and more text, and ever shrinking graphics. From there it is a slippery slope until you end up with a diagram that your reader must zoom in 400% to have any hope of making sense of it.</p>
 
-<p>The worse offenders of unreadable diagrams are the Chinglish data sheets from no-name Chinese manufacturers:</p>
+<p>The worst offenders of unreadable diagrams are the Chinglish data sheets from no-name Chinese manufacturers:</p>
 
 <p><br /></p>
 
 <p class="center"><img src="/images/ee-specs/image014.png" alt="Ground your pixels" class="img-responsive" width="85%" /></p>
 
-<p style="text-align: center;"><em>Figure 14: “Make sure to connect your pixels to ground”. [5]</em></p>
+<p style="text-align: center;"><em>Figure 14: “Make sure to connect your pixels to ground”. <a href="https://hackaday.com/2015/04/12/documenting-poorly-documented-led-strips/#more-152513">[5]</a></em></p>
 
 <p><br /></p>
 
@@ -314,7 +336,7 @@
 
 <p class="center"><img src="/images/ee-specs/image015.png" alt="Lattice Semi Datasheet" class="img-responsive" width="80%" /></p>
 
-<p style="text-align: center;"><em>Figure 15: Whoa. There is a lot going on, let’s zoom in.</em></p>
+<p style="text-align: center;"><em>Figure 15: Whoa. There is a lot going on, <a href="https://www.latticesemi.com/-/media/LatticeSemi/Documents/ApplicationNotes/AD/DSPFunctionUsageGuideforICE40Devices.ashx?document_id=50669">let’s zoom in.</a></em></p>
 
 <p><br /></p>
 
@@ -328,11 +350,11 @@
 
 <p>The block diagram is a map - a way for you to put the reader’s visual cortex into work so that they understand your system better. So, make it a good map.</p>
 
-<h2 id="lesson-3-clearly-capture-the-interfaces-within-the-design">Lesson 3: Clearly capture the interfaces within the design.</h2>
+<h2 id="chapter6">Lesson 3: Clearly capture the interfaces within the design.</h2>
 
 <p>It is so important to describe, in detail, the interfaces between the subsystems of your design. These interfaces are prime breeding grounds for bugs, and your efforts to painstakingly specify the interactions between your subsystems will allow you to catch bugs before they have a chance to appear.</p>
 
-<p>The writers of the IBM PC spec went to great lengths to capture their interfaces. Figure 17 shows how data flows within the system board. Even though making a full data flow diagram could be hard for complicated modern designs, at the very least you should make power trees and clock trees. The power tree shows how power flows in your design, and the clock tree shows where your subsystems get their clocks from.</p>
+<p>The writers of the IBM PC spec went to great lengths to capture their interfaces. Figure 17 shows how data flows within the system board. Even though making a full data flow diagram could be hard for complicated modern designs, it is worth it to add at least power trees and clock trees. The power tree shows how power flows in your design, and the clock tree shows where your subsystems get their clocks from.</p>
 
 <p><br /></p>
 
@@ -362,23 +384,23 @@
 
 <p><br /></p>
 
-<h2 id="lesson-4-do-not-mix-implementation-with-specification">Lesson 4: Do not mix implementation with specification</h2>
+<h2 id="chapter7">Lesson 4: Do not mix implementation with specification</h2>
 
 <p>Now is a good time to meditate on what exactly it is that we are trying to accomplish when we write a specification.</p>
 
-<p>A specification is about the architecture of an engineering system. It tells us how an overarching system emerges from numerous subsystems. For a specification to be effective, it needs to be agnostic of the implementation. This quote from the famous book <em>The Mythical Man Month</em> explains beautifully what we mean by the distinctness of the architecture, and the implementation (emphasis is mine):</p>
+<p>A specification is about the architecture of an engineering system. It tells us how an overarching system emerges from numerous subsystems. For a specification to be effective, it needs to be agnostic of the implementation. This quote from the famous book <em>The Mythical Man Month</em> explains beautifully what we mean by the distinctness of the architecture, and the implementation (the emphasis is mine):</p>
 
 <blockquote>
   <p>The separation of architectural effort from implementation is a very powerful way of getting conceptual integrity on very large projects […] By the architecture of a system, I mean the complete and detailed specification of the user interface. For a computer this is the programming manual. For a compiler it is the language manual. For a control program it is the manuals for the language or languages used to invoke its functions. For the entire system it is the union of the manuals the user must consult to do his entire job.
 <strong>The architect of a system, like the architect of a building, is the user’s agent.</strong> It is his job to bring professional and technical knowledge to bear in the unalloyed interest of the user, as opposed to the interests of the salesman, the fabricator, etc.
-Architecture must be carefully distinguished from implementation. As Blaauw has said, “Where architecture tells what happens, implementation tells how it is made to happen.” He gives as a simple example a clock, whose architecture consists of the face, the hands, and the winding knob. When a child has learned this architecture, he can tell time as easily from a wristwatch as from a church tower. The implementation, however, and its realization, describe what goes on inside the case—powering by any of many mechanisms and accuracy control by any of many. [2]</p>
+Architecture must be carefully distinguished from implementation. As Blaauw has said, “Where architecture tells what happens, implementation tells how it is made to happen.” He gives as a simple example a clock, whose architecture consists of the face, the hands, and the winding knob. When a child has learned this architecture, he can tell time as easily from a wristwatch as from a church tower. The implementation, however, and its realization, describe what goes on inside the case—powering by any of many mechanisms and accuracy control by any of many. <a href="#mmm">[2]</a></p>
 </blockquote>
 
 <p>Users do not care about how features are implemented in your system. What they care is what your system can accomplish for them, which is what the specification is about. When you are writing your spec, you should not forget that you are the user’s agent. When I was writing my spec, I included a section that gave the user’s story of how they would interact with the system we were specifying.</p>
 
 <p>Divorcing implementation and separation is yet another area where the IBM PC spec shines. The only place where you will find detailed schematics is the appendix. They stuck to using off-the-shelf parts as much as possible (e.g 74LS244 buffers), which helps to split specification and implementation. A common way for implementation to sneak into the specification is the usage of poorly specified, proprietary parts. These parts become black holes to the readers, which eventually force them to make frustrated calls to Field Applications Engineers supporting those parts, reducing the value of the spec document in the process.</p>
 
-<h2 id="lesson-5-follow-good-electrical-specification-practices">Lesson 5: Follow good electrical specification practices</h2>
+<h2 id="chapter8">Lesson 5: Follow good electrical specification practices</h2>
 
 <p>In the first three lessons, we already touched upon some good examples of how to specify electrical parameters. I praised the interface description in Figure 18, and the electrical block diagram in Figure 13. Here are some more good examples from the IBM PC spec.</p>
 
@@ -392,7 +414,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image020.png" alt="Specifying Floppy disks" class="img-responsive" width="70%" /></p>
+<p class="center"><img src="/images/ee-specs/image020.png" alt="Specifying Floppy disks" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 20: IBM PC designers meticulously specified their 5 ¼’’ diskettes.</em></p>
 
@@ -400,11 +422,11 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <h3 id="make-good-electrical-block-diagrams">Make good electrical block diagrams</h3>
 
-<p>We already saw an electrical block diagram example in Figure 10. Here is another in Figure 15. Notice how this diagram contains more electrical details than a typical block diagram, but it is not quite a schematic, and it does not need to be. Electrical components such as D-latches and the 74LS322 shift register are represented as functional blocks only. After understanding this block diagram, the reader will have a much easier time reading the schematic for the keyboard interface.</p>
+<p>We already saw an electrical block diagram example in Figure 10. Here is another in Figure 21. Notice how this diagram contains more electrical details than a typical block diagram, but it is not quite a schematic, and it does not need to be. Electrical components such as D-latches and the 74LS322 shift register are represented as functional blocks only. After understanding this block diagram, the reader will have a much easier time reading the schematic for the keyboard interface.</p>
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image021.png" alt="Another EE block diagram example" class="img-responsive" width="70%" /></p>
+<p class="center"><img src="/images/ee-specs/image021.png" alt="Another EE block diagram example" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 21: Another electrical block diagram example.</em></p>
 
@@ -416,7 +438,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image022.png" alt="Joystick blog diagram" class="img-responsive" width="70%" /></p>
+<p class="center"><img src="/images/ee-specs/image022.png" alt="Joystick blog diagram" class="img-responsive" width="90%" /></p>
 
 <p style="text-align: center;"><em>Figure 22: A simple joystick schematic. This is appropriate for a spec.</em></p>
 
@@ -424,33 +446,33 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <h3 id="include-tolerances-for-the-parameters-you-specify">Include tolerances for the parameters you specify</h3>
 
-<p>State tolerances for any of the parameters you give in your document. An example of this for the IBM PC’s power supply is given in Figure 23.</p>
+<p>State tolerances for any of the parameters you give in your document, just like in Figure 23 below.</p>
 
-<p>A common mistake here is ambiguity with regard to “nominal” specs. Even datasheets from large semiconductor companies can sometime be guilty of this. How was the nominal measured? What operating temperature is being assumed at nominal conditions?</p>
+<p>A common mistake here is ambiguity with regard to “nominal” specs. Even datasheets from large semiconductor companies can be guilty of this. How is “nominal” defined? What operating temperature is being assumed at nominal conditions?</p>
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image023.png" alt="Parameter tolerances" class="img-responsive" width="70%" /></p>
+<p class="center"><img src="/images/ee-specs/image023.png" alt="Parameter tolerances" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 23: Specify tolerances for your parameters.</em></p>
 
 <p><br /></p>
 
-<h2 id="lesson-6-think-of-how-you-can-support-the-reader">Lesson 6: Think of how you can support the reader</h2>
+<h2 id="chapter9">Lesson 6: Think of how you can support the reader</h2>
 
 <p>The reason you are going through all this effort of writing a specification document is the reader. Whatever you do, it is important that you try to make the reader’s job as easy as possible. This will determine whether you are successful or not as the writer of the specification document. A common complaint I see about writing specifications is “well nobody is going to read it anyway”. This attitude will become a self-fulfilling prophecy for any piece of writing, because the writer will not put in their best work, and they will not have empathy with the reader.</p>
 
-<p>To give your spec a chance to be read widely, you need to ensure the you have grammar and spelling nailed, and that the document looks good. You do not need to spend five hours trying to find the perfect LaTeX package (cough cough) but do make the document clean and approachable.</p>
+<p>To give your spec a chance to be read widely, you need to ensure the you have grammar and spelling nailed, and that the document looks good. You do not need to spend five hours trying to find the perfect LaTeX package (<em>cough cough</em>) but do make the document clean and approachable.</p>
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image024.png" alt="Spec horror" class="img-responsive" width="70%" /></p>
+<p class="center"><img src="/images/ee-specs/image024.png" alt="Spec horror" class="img-responsive" width="90%" /></p>
 
-<p style="text-align: center;"><em>Figure 24: Please promise me you won’t do this. [3]</em></p>
+<p style="text-align: center;"><em>Figure 24: Please promise me you won’t do this. <a href="https://datasheet.datasheetarchive.com/originals/crawler/antcom.com/9ec044cf132c90fd9bd7bbcf3b40c318.pdf">[3]</a></em></p>
 
 <p><br /></p>
 
-<p>From my own experience as a reader of specs, adding the sections I listed below will drastically increase the value of your specification document. They all build a support structure in your document for the benefit of your reader.</p>
+<p>From my own experience as a reader of specs, adding the sections I listed below will greatly increase the value of your specification document.</p>
 
 <h3 id="the-appendix">The Appendix</h3>
 
@@ -466,13 +488,13 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
     <p>Quick reference information. An example of this is how the IBM PC spec included the assembly instruction set for the Intel 8086.</p>
   </li>
   <li>
-    <p>Any checklists, quick start guides, or recommended design workflows for designers that would be working with the system that you specified.</p>
+    <p>Any checklists, quick start guides, or recommended design workflows for designers that would be working with your system.</p>
   </li>
 </ul>
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image025.png" alt="IBM PC spec appendix" class="img-responsive" width="70%" /></p>
+<p class="center"><img src="/images/ee-specs/image025.png" alt="IBM PC spec appendix" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 25: Appendices included with the IBM PC spec.</em></p>
 
@@ -484,7 +506,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image026.png" alt="IBM PC spec glossary" class="img-responsive" width="70%" /></p>
+<p class="center"><img src="/images/ee-specs/image026.png" alt="IBM PC spec glossary" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 26: Glossary from the IBM PC spec.</em></p>
 
@@ -500,9 +522,9 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image027.png" alt="International Docking Standard, revision tracking." class="img-responsive" width="70%" /></p>
+<p class="center"><img src="/images/ee-specs/image027.png" alt="International Docking Standard, revision tracking." class="img-responsive" width="80%" /></p>
 
-<p style="text-align: center;"><em>Figure 27: Revision tracking from the International Docking Adapter specification. [4]</em></p>
+<p style="text-align: center;"><em>Figure 27: Revision tracking from the International Docking Adapter specification. <a href="https://www.internationaldockingstandard.com/download/IDSS_IDD_Revision_E_TAGGED.pdf">[4]</a></em></p>
 
 <p><br /></p>
 
@@ -512,13 +534,13 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image028.png" alt="IBM PC Spec, list of figures" class="img-responsive" width="70%" /></p>
+<p class="center"><img src="/images/ee-specs/image028.png" alt="IBM PC Spec, list of figures" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 28: List of figures from the IBM PC spec.</em></p>
 
 <p><br /></p>
 
-<h2 id="wrapping-up-and-further-resources">Wrapping up, and further resources</h2>
+<h2 id="chapter10">Wrapping up, and further resources</h2>
 
 <p>Let us recap the lessons I learned from the IBM PC specification:</p>
 
@@ -555,25 +577,25 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <h3 id="nasa-specs">NASA specs</h3>
 
-<p>NASA and many of the other bodies in the aerospace industry publish their specs, which can make for great learning material. I especially like the International Docking Adapter specification, which specifies how spacecraft need to have their docking interface built in order to attach to the International Space Station. It is a great example of how to specify interfaces between systems really well.</p>
+<p>NASA and many of the other organizations in the aerospace industry publish their specs, which can make for great learning material. I especially like the <a href="https://www.internationaldockingstandard.com/download/IDSS_IDD_Revision_E_TAGGED.pdf">International Docking Adapter specification</a>, which specifies how spacecraft need to have their docking interface built in order to attach to the International Space Station. It is a great example of how to specify interfaces between systems.</p>
 
 <h2 id="article-series">Article series</h2>
 
-<p>This was the first installment in my article series on things I did not learn in electrical engineering school. There will be more articles to come. The next one will either be about flexible circuit board basics, or tips for interviewing. Stay tuned!</p>
+<p>This was the first installment in my article series on topics I wish I had learned in electrical engineering school. There will be more articles to come. The next one will either be about the basics of flexible circuit boards, or tips for interviewing for EE jobs. Stay tuned!</p>
 
 <h2 id="references">References</h2>
 
 <p>[1] <a href="https://www.gwern.net/Complement#2">Laws of Tech : Commoditize Your Complement</a></p>
 
-<p>[2] Brooks, Frederick P.. The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition. United States, Pearson Education, 1995.</p>
+<p id="mmm">[2] <a href="https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959/ref=sr_1_1?crid=1KRUN0TO6BQCM&amp;dchild=1&amp;keywords=the+mythical+man+month&amp;qid=1591771115&amp;sprefix=the+mythical+ma%2Caps%2C216&amp;sr=8-1">Brooks, Frederick P.. The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition. United States, Pearson Education, 1995</a>.</p>
 
-<p>[3] Antcom L1/L2 GPS Antennas.</p>
+<p>[3] <a href="https://datasheet.datasheetarchive.com/originals/crawler/antcom.com/9ec044cf132c90fd9bd7bbcf3b40c318.pdf">Antcom L1/L2 GPS Antennas</a>.</p>
 
-<p>[4] International Docking Standard (IDSS), Interface Definition Document (IDD), Revision E,  2016.</p>
+<p>[4] <a href="https://www.internationaldockingstandard.com/download/IDSS_IDD_Revision_E_TAGGED.pdf">International Docking Standard (IDSS), Interface Definition Document (IDD), Revision E,  2016</a>.</p>
 
 <p>[5] <a href="https://hackaday.com/2015/04/12/documenting-poorly-documented-led-strips/#more-152513">Documenting Poorly Documented LED Strips</a></p>
 
-<p>[6] Merchant, Brian. The One Device: The Secret History of the iPhone. United States, Little, Brown, 2017.</p>
+<p id="iphone">[6] <a href="https://www.amazon.com/The-One-Device-Brian-Merchant-audiobook/dp/B072QDKDRR/ref=sr_1_1?dchild=1&amp;keywords=the+one+device&amp;qid=1591771164&amp;sr=8-1">Merchant, Brian. The One Device: The Secret History of the iPhone. United States, Little, Brown, 2017</a>.</p>
 
 <hr />
 <hr />

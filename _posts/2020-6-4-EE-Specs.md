@@ -1,8 +1,8 @@
 ---
 layout: post
 title: How I Learned to Write Electrical Engineering Specifications
-date: 2020-06-05 23:22:00 +0000
-visible: 0
+date: 2020-06-18 23:22:00 +0000
+visible: 1
 ---
 
 About nine months ago, when I was still working at Microsoft as an electrical engineer on the Surface team, my manager asked me to write a specification for the project I was working on.
@@ -39,7 +39,31 @@ Back during school, and when I first started working, I used to think that writi
 
 The sentiment above is still common in the technology industry, which I think is a shame. After three years in the industry, I have changed my mind, and now believe that a having good specs is critical for making your project a success.
 
+## Table of  Contents
+
+[What even is a good specification, or the Huaqiangbei test](#chapter1)
+
+[Trying to find the shoulders of giants](#chapter2)
+
+[The IBM PC spec](#chapter3)
+
+[Lesson 1: Write your table of contents carefully](#chapter4)
+
+[Lesson 2: Maintain a systems-centric view of your design, at all levels](#chapter5)
+
+[Lesson 3: Clearly capture the interfaces within the design](#chapter6)
+
+[Lesson 4: Do not mix implementation with specification](#chapter7)
+
+[Lesson 5: Follow good electrical specification practices](#chapter8)
+
+[Lesson 6: Think of how you can support the reader](#chapter9)
+
+[Wrapping up, and further resources](#chapter10)
+
+
 ## What even is a good specification, or the Huaqiangbei test
+{: #chapter1}
 
 I thought hard about what actually made me change my mind about specs, and I can boil it down to the following:
 
@@ -74,11 +98,12 @@ Imagine now that your specification gets magically air-dropped into the Huaqiang
 
 - If the Huaqianbei folk were able to re-create your product without input from the designers, or without having to resort to reverse engineering an existing product, you have succeeded in writing a specification that stands on its own.
 
-- The Huaquanbei engineer’s native language is not English. So, you need to really make sure that your spec is clear by avoiding convoluted language, in addition to relying on well-made diagrams and tables. (This imaginary test notwithstanding, modern technology teams have many immigrant members, who may not be as comfortable in English, so this point is actually really, really important).
+- The Huaquanbei engineer’s native language is not English. So, you need to really make sure that your spec is clear by avoiding convoluted language, in addition to relying on well-made diagrams and tables. (This imaginary test notwithstanding, modern teams in the tech industry tend to have many immigrant members who may not have full mastery of written English, so this point is actually really, really important).
 
 The rest of this article is what I wish I had known about writing specifications when I graduated from school. We are going to talk about how I learned to write specs, and how I can help you make sure that the specifications you write for your electrical engineering projects can pass the Huaqianbei test. 
 
 ## Trying to find the shoulders of giants
+{: #chapter2}
 
 After I got my spec writing assignment from my manager, I decided to start by finding examples of specifications to read. I read a number of internal Surface specifications. While those specs were overall very well written, and immensely helpful, I still wanted to read specs written by other companies. I am always mindful about not being trapped in a group-think situation, and I wanted to see what else was out there.
 
@@ -86,9 +111,9 @@ This is where I went off searching for specifications that were in the public do
 
 Many specifications and test standards from the U.S Military, DoD and NASA are public, and these can be good resources. I did read some [MIL-STD’s](http://everyspec.com/MIL-STD/MIL-STD-0800-0899/MIL-STD-883K_CHG-3_55826/) during my search. I also looked into [software design documents](https://www.freecodecamp.org/news/how-to-write-a-good-software-design-document-66fcf019569c/), whose examples are quite easy to find online for [open source software projects](https://www.kernel.org/doc/html/latest/). Yet neither of these two kinds of specifications were quite what I was looking for:
 
-1.     The system that the specification was written for should be an electrical, or electro-mechanical system. While software design documents are interesting, as an electrical engineer I wanted to see something ... electrical.
+1.     The system that the specification was written for should be an electrical, or electro-mechanical system. While software design documents are interesting, as an electrical engineer I wanted to see something ... *electrical*.
 
-2.     I wanted to be reasonably familiar with the system that the spec was written for. The spec should be understandable to me without spending too much effort. The specs for electron tubes do not make for ideal learning material.
+2.     I wanted to be reasonably familiar with the system that the spec was written for. The spec should be understandable to me without spending too much effort. The specs for [electron tubes](http://everyspec.com/MIL-SPECS/MIL-SPECS-MIL-E/MIL-E-1K_28303/) do not make for ideal learning material.
 
 3.     Bonus points if the spec was written for a product that I used personally.
 
@@ -106,8 +131,9 @@ I ended up finding something that fit the bill perfectly – the 39-year old spe
 <br>
 
 ## The IBM PC spec
+{: #chapter3}
 
-When I say IBM PC specification, I am actually referring to the user manual for the IBM PC, which is as good as a full engineering specification.
+When I say IBM PC specification, I am actually referring to the user manual for the IBM PC, which is essentially a full engineering specification.
 
 The IBM PC was released at dawn of the personal computer age, back when the [hacker culture](https://en.wikipedia.org/wiki/Hacker_culture) seeped even into IBM. Computers were seen as highly sophisticated machines, and they came with amazingly detailed manuals compared to what you get when you buy a computer today. It was common to get a schematic for the computer you bought, for example. Apple II's schematics could be found in its manual. The IBM PC manual even had the source code for its BIOS. Could you imagine all that today?
 
@@ -138,16 +164,17 @@ Let’s now talk about the six lessons I learned from the IBM PC spec that I bel
 {: refdef}
 
 ## Lesson 1: Write your table of contents carefully.
+{: #chapter4}
 
 The way the table of contents (ToC) is written will bias the reader’s understanding of the system. It is critical that table of contents is organized in a way that makes sense given how the system works.
 
 When I was writing my specification, I wrote the ToC first before writing anything for the body of the specification. I found the ToC to be the hardest piece of the specification to write. Why? Because the ToC directly captures the writer’s understanding of how the whole system is composed of parts, and how those parts need to come together to grasp the workings of the whole. Writing the ToC is like writing an outline for your spec.
  
-My spec was about the interaction of two systems, which I will call the Transmitter and the Receiver. The Transmitter provides power to the Receiver, and there is bidirectional data flow between the two. I spent a few days just coming up with the highest level of organization, which would directly determine how I would title my chapters. Should I make the Transmitter device the centerpiece of the discussion, or should I make the Transmitter and Receiver equal citizens? Perhaps, my chapters should be titled Data Transfer and Power Transfer instead of the Transmitter or the Receiver – after all, the value this system provides comes from the transfer of energy and data between the two subsystems. I kept having conversations in my head about which approach was right, which was frustrating because I was feeling like I was not making real progress on my writing, but I knew that getting to a ToC that made sense to both me and to the reader was crucial.
+My spec was about the interaction of two systems, which I will call the Transmitter and the Receiver. The Transmitter provides power to the Receiver, and there is bidirectional data flow between the two. I spent a few days just coming up with the highest level of organization, which would directly determine how I would title my chapters. Should I make the Transmitter device the centerpiece of the discussion, or should I make the Transmitter and Receiver equal citizens? Perhaps, my chapters should be titled Data Transfer and Power Transfer instead of the Transmitter or the Receiver – after all, the value this system provides comes from the transfer of energy and data between the two subsystems. I kept having conversations in my head about which approach was right, which was frustrating because I was feeling like I was not making real progress on my writing, but I knew that getting to a ToC that made sense to both me and to the reader was crucial. In the end, I decided to organize the information in my spec along the lines of Transmitter and the Receiver. 
 
-In the end, I decided to organize the information in my spec along the lines of Transmitter and the Receiver. The reasons as to why I made this decision is beyond the scope of this article, but I hope I made my point – there might be multiple valid ways to structure your table of contents, so you need to be prepared to spend a great deal of time drafting your ToC. After you figure out what your chapters, sections, subsections, and sub-subsections will be, reviewing your ToC by a few trusted colleagues will be immensely helpful.
+Just like my example above, there might be multiple valid ways to structure your table of contents, so you need to be prepared to spend a good chunk of your time drafting the ToC. After you figure out what your chapters, sections, subsections, and sub-subsections will be, reviewing your ToC by a few trusted colleagues will be immensely helpful.
 
-The ToC can and should get tweaked as you now write the body of your spec, but I found that having a first version of the ToC figured out before diving into the writing process helped me a lot to smash writer’s block, and make quick progress.
+The ToC can and should get tweaked as you now write the rest of your spec, but I found that having a first version of the ToC figured out before diving into the writing process helped me a lot to smash writer’s block.
 
 <br>
 
@@ -208,6 +235,7 @@ The IBM PC spec has an excellent preface that succinctly introduces us to the 39
 <br>
 
 ## Lesson 2: Maintain a systems-centric view of your design, at all levels
+{: #chapter5}
 
 We actually began discussing Lesson 2 already, when we talked about the difficulty of coming up with chapters, sections, and sub-sections in the table of contents. At the heart of Lesson 2 is the following question: how do you break down the complexity of your design, such that the specification is easy to understand for the reader?
 
@@ -321,7 +349,7 @@ Coming up with quality block diagrams takes time. This effort pays off handsomel
 
 While a block diagram is usually a good guide for your readers, it can lead them down a path of confusion if you are not careful. Many block diagrams try to cram too much information – a common offense that has especially been made worse with diagrams that were never meant to be printed. The older block diagrams I came across during my research were hand drawn and were always meant to reside on a piece of paper. This guaranteed a certain degree of simplicity. When the writer only ever sees their block diagram on a screen, it becomes easier for them to add more and more text, and ever shrinking graphics. From there it is a slippery slope until you end up with a diagram that your reader must zoom in 400% to have any hope of making sense of it.
 
-The worse offenders of unreadable diagrams are the Chinglish data sheets from no-name Chinese manufacturers:
+The worst offenders of unreadable diagrams are the Chinglish data sheets from no-name Chinese manufacturers:
 
 <br>
 
@@ -363,10 +391,11 @@ Sadly, large semiconductor companies are guilty of block diagram pixel art too:
 The block diagram is a map - a way for you to put the reader’s visual cortex into work so that they understand your system better. So, make it a good map.
 
 ## Lesson 3: Clearly capture the interfaces within the design.
+{: #chapter6}
 
 It is so important to describe, in detail, the interfaces between the subsystems of your design. These interfaces are prime breeding grounds for bugs, and your efforts to painstakingly specify the interactions between your subsystems will allow you to catch bugs before they have a chance to appear.
 
-The writers of the IBM PC spec went to great lengths to capture their interfaces. Figure 17 shows how data flows within the system board. Even though making a full data flow diagram could be hard for complicated modern designs, at the very least you should make power trees and clock trees. The power tree shows how power flows in your design, and the clock tree shows where your subsystems get their clocks from.
+The writers of the IBM PC spec went to great lengths to capture their interfaces. Figure 17 shows how data flows within the system board. Even though making a full data flow diagram could be hard for complicated modern designs, it is worth it to add at least power trees and clock trees. The power tree shows how power flows in your design, and the clock tree shows where your subsystems get their clocks from.
 
  <br>
 
@@ -407,10 +436,11 @@ Figure 19 is cool, because the Pin 1 location of the Diskette Drive Adapter is l
 <br>
 
 ## Lesson 4: Do not mix implementation with specification
+{: #chapter7}
 
 Now is a good time to meditate on what exactly it is that we are trying to accomplish when we write a specification.
 
-A specification is about the architecture of an engineering system. It tells us how an overarching system emerges from numerous subsystems. For a specification to be effective, it needs to be agnostic of the implementation. This quote from the famous book *The Mythical Man Month* explains beautifully what we mean by the distinctness of the architecture, and the implementation (emphasis is mine):
+A specification is about the architecture of an engineering system. It tells us how an overarching system emerges from numerous subsystems. For a specification to be effective, it needs to be agnostic of the implementation. This quote from the famous book *The Mythical Man Month* explains beautifully what we mean by the distinctness of the architecture, and the implementation (the emphasis is mine):
 
 >The separation of architectural effort from implementation is a very powerful way of getting conceptual integrity on very large projects […] By the architecture of a system, I mean the complete and detailed specification of the user interface. For a computer this is the programming manual. For a compiler it is the language manual. For a control program it is the manuals for the language or languages used to invoke its functions. For the entire system it is the union of the manuals the user must consult to do his entire job.
 **The architect of a system, like the architect of a building, is the user's agent.** It is his job to bring professional and technical knowledge to bear in the unalloyed interest of the user, as opposed to the interests of the salesman, the fabricator, etc.
@@ -421,6 +451,7 @@ Users do not care about how features are implemented in your system. What they c
 Divorcing implementation and separation is yet another area where the IBM PC spec shines. The only place where you will find detailed schematics is the appendix. They stuck to using off-the-shelf parts as much as possible (e.g 74LS244 buffers), which helps to split specification and implementation. A common way for implementation to sneak into the specification is the usage of poorly specified, proprietary parts. These parts become black holes to the readers, which eventually force them to make frustrated calls to Field Applications Engineers supporting those parts, reducing the value of the spec document in the process.
 
 ## Lesson 5: Follow good electrical specification practices
+{: #chapter8}
 
 In the first three lessons, we already touched upon some good examples of how to specify electrical parameters. I praised the interface description in Figure 18, and the electrical block diagram in Figure 13. Here are some more good examples from the IBM PC spec.
 
@@ -480,7 +511,7 @@ While you want to avoid full-blown, complex schematics in your specifications, u
 
 State tolerances for any of the parameters you give in your document, just like in Figure 23 below.
 
-A common mistake here is ambiguity with regard to “nominal” specs. Even datasheets from large semiconductor companies can sometime be guilty of this. How was the nominal measured? What operating temperature is being assumed at nominal conditions? 
+A common mistake here is ambiguity with regard to “nominal” specs. Even datasheets from large semiconductor companies can be guilty of this. How is "nominal" defined? What operating temperature is being assumed at nominal conditions?
 
  <br>
  
@@ -495,10 +526,11 @@ A common mistake here is ambiguity with regard to “nominal” specs. Even data
 
 
 ## Lesson 6: Think of how you can support the reader
+{: #chapter9}
 
 The reason you are going through all this effort of writing a specification document is the reader. Whatever you do, it is important that you try to make the reader’s job as easy as possible. This will determine whether you are successful or not as the writer of the specification document. A common complaint I see about writing specifications is “well nobody is going to read it anyway”. This attitude will become a self-fulfilling prophecy for any piece of writing, because the writer will not put in their best work, and they will not have empathy with the reader.
 
-To give your spec a chance to be read widely, you need to ensure the you have grammar and spelling nailed, and that the document looks good. You do not need to spend five hours trying to find the perfect LaTeX package (cough cough) but do make the document clean and approachable. 
+To give your spec a chance to be read widely, you need to ensure the you have grammar and spelling nailed, and that the document looks good. You do not need to spend five hours trying to find the perfect LaTeX package (*cough cough*) but do make the document clean and approachable. 
 
  <br>
  
@@ -589,6 +621,7 @@ List of Figures and List of Tables are great for easy reference.
 <br>
 
 ## Wrapping up, and further resources
+{: #chapter10}
 
 Let us recap the lessons I learned from the IBM PC specification:
 
@@ -630,7 +663,7 @@ NASA and many of the other organizations in the aerospace industry publish their
 
 ## Article series
 
-This was the first installment in my article series on things I did not learn in electrical engineering school. There will be more articles to come. The next one will either be about flexible circuit board basics, or tips for interviewing. Stay tuned!
+This was the first installment in my article series on topics I wish I had learned in electrical engineering school. There will be more articles to come. The next one will either be about the basics of flexible circuit boards, or tips for interviewing for EE jobs. Stay tuned!
 
 ## References
  
