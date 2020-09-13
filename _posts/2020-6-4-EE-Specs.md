@@ -9,12 +9,11 @@ About nine months ago, when I was still working at Microsoft as an electrical en
 
 <br>
 
-{: .center}
-![My teacher.](/images/ee-specs/image001.jpg){:class="img-responsive"}{:width="70%"}
+![My teacher.](/images/ee-specs/image001.jpg){:class="figure"}{:width="70%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 1: My teacher. Photo by [Ruben de Rijcke](https://en.wikipedia.org/wiki/IBM_Personal_Computer#/media/File:Ibm_pc_5150.jpg)*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -24,14 +23,14 @@ The more I thought about my new assignment, the more I started to worry. My proj
 
 This was not the first time I was looking back on college and doubting myself. Every time I had to learn on the job, I kept asking myself: “Why don’t I know this already? Did I miss something at Stanford?”. I had gone to a good school, and studied under professors who could charge hundreds of dollars an hour consulting in the industry, so how come I did not know how to do so many of the seemingly basic tasks a junior engineer was expected to do? So, it went on and on:
 
-{: .center}
-EMI testing – why don’t I know this already?
+*EMI testing – why don’t I know this already?*
+{: style="text-align: center;"}
 
-{: .center}
-PCB manufacturing – why don’t I know this already?
+*PCB manufacturing – why don’t I know this already?*
+{: style="text-align: center;"}
 
-{: .center}
-Flexible circuit boards – why don’t I know this already?
+*Flexible circuit boards – why don’t I know this already?*
+{: style="text-align: center;"}
 
 A week after I had received my new assignment, it became clear to me that learning how to write a specification was going to be my hardest learn-on-the-job experience yet. Why? Because I was actually having an unlearn-on-the-job experience.
 
@@ -77,12 +76,12 @@ So, what constitutes a “good” spec? I came up with something I call the Huaq
 
 <br>
 
-{: .center}
 ![Huaqiangbei.](/images/ee-specs/image002.jpg){:class="img-responsive"}{:width="75%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
+
 *Figure 2: the Huaqiangbei in Shenzen, China. Photo by [Tocha](https://medium.com/chinafacture/huaqiangbei-the-biggest-electronics-market-in-the-world-shenzhen-china-3ec66e5d2df0)*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -121,12 +120,12 @@ I ended up finding something that fit the bill perfectly – the 39-year old spe
 
 <br>
 
-{: .center}
-![A boy using an IBM PC.](/images/ee-specs/image003.jpg){:class="img-responsive"}{:width="75%"}
 
-{:refdef: style="text-align: center;"}
+![A boy using an IBM PC.](/images/ee-specs/image003.jpg){:class="img-responsive"}{:width="75%"}
+{: style="text-align: center;"}
+
 *Figure 3: The IBM PC 5150, released in 1981. Photo by [Engelbert Reineke](https://en.wikipedia.org/wiki/IBM_Personal_Computer#/media/File:Bundesarchiv_B_145_Bild-F077948-0006,_Jugend-Computerschule_mit_IBM-PC.jpg)*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -178,12 +177,11 @@ The ToC can and should get tweaked as you now write the rest of your spec, but I
 
 <br>
 
-{: .center}
 ![IBM PC Spec - Table of contents.](/images/ee-specs/image004.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 4: Table of contents from the IBM PC specification.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -193,12 +191,11 @@ The second section is called “Hardware”. This is a long section with 100+ pa
 
 <br>
 
-{: .center}
 ![Subsections within the hardware section.](/images/ee-specs/image005.png){:class="img-responsive"}{:width="75%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 5: Subsections within the hardware section.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -208,12 +205,11 @@ When specifying a computer, a table of contents that splits the organization int
 
 <br>
 
-{: .center}
 ![Another page from the table of contents.](/images/ee-specs/image006.png){:class="img-responsive"}{:width="75%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 6: Another page from the table of contents.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -225,12 +221,11 @@ The IBM PC spec has an excellent preface that succinctly introduces us to the 39
 
 <br>
 
-{: .center}
 ![A preface](/images/ee-specs/image007.png){:class="img-responsive"}{:width="75%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 7: A preface is a great way to introduce the reader to their quest in understanding your system.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -247,23 +242,22 @@ At Abstraction Level 0, we have the hardware overview given at Section 1. This i
 
 <br>
 
-{: .center}
+
 ![Abstraction Level 0](/images/ee-specs/image008.png){:class="img-responsive"}{:width="75%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 8: Abstraction Level 0, where we get an overview, and marketing-level specifications.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
 <br>
 
-{: .center}
 ![Floppy disk](/images/ee-specs/image009.jpg){:class="img-responsive"}{:width="60%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 9: A 5 ¼ ‘’ Diskette. Contrary to the popular belief, this is not a 3D printed save icon 😉 Photo by [Theo Curmudgeon](https://www.flickr.com/photos/22457710@N00/252074409)*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -283,12 +277,11 @@ This level of detail corresponds to about as much as a “power user” would li
 
 <br>
 
-{: .center}
 ![Abstraction Level 1](/images/ee-specs/image010.png){:class="img-responsive"}{:width="75%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 10: Abstraction Level 1, where we start getting real engineering details.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -304,12 +297,11 @@ While this lesson in finding the appropriate levels of abstraction and the level
 
 <br>
 
-{: .center}
 ![Abstraction Level 2](/images/ee-specs/image011.png){:class="img-responsive"}{:width="75%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 11: Abstraction Level 2. Getting even more electrical engineering details now.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -323,12 +315,11 @@ In the IBM PC block diagram, there is a visual sense of what each block physical
 
 <br>
 
-{: .center}
 ![IBM PC block diagram](/images/ee-specs/image012.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 12: IBM PC’s block diagram. Easy on the eyes, and easy to understand. This is a good “Abstraction Level 0” block diagram.*
-{: refdef}
+{: style="text-align: center;"}
   
 <br>
 
@@ -336,12 +327,11 @@ The Diskette Drive block diagram below is appropriate for Abstraction Level 2. A
 
 <br>
 
-{: .center}
 ![Floppy drive block diagram](/images/ee-specs/image013.png){:class="img-responsive"}{:width="90%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 13: An " Abstraction Level 2" block diagram for the Diskette Drive.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -353,12 +343,11 @@ The worst offenders of unreadable diagrams are the Chinglish data sheets from no
 
 <br>
 
-{: .center}
 ![Ground your pixels](/images/ee-specs/image014.png){:class="img-responsive"}{:width="85%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 14: "Make sure to connect your pixels to ground". [[5]](https://hackaday.com/2015/04/12/documenting-poorly-documented-led-strips/#more-152513)*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -367,24 +356,22 @@ Sadly, large semiconductor companies are guilty of block diagram pixel art too:
 
 <br>
 
-{: .center}
 ![Lattice Semi Datasheet](/images/ee-specs/image015.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 15: Whoa. There is a lot going on, [let's zoom in.](https://www.latticesemi.com/-/media/LatticeSemi/Documents/ApplicationNotes/AD/DSPFunctionUsageGuideforICE40Devices.ashx?document_id=50669)*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
 
 <br>
 
-{: .center}
 ![Lattice Semi Datasheet, zoomed in and pixelated](/images/ee-specs/image016.png){:class="img-responsive"}{:width="75%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 16: 16x16 = 32??? [From Twitter user @oe1cxw](https://twitter.com/oe1cxw/status/1097821398490320896)*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -399,12 +386,11 @@ The writers of the IBM PC spec went to great lengths to capture their interfaces
 
  <br>
 
-{: .center}
 ![IBM PC motherboard data flow](/images/ee-specs/image017.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 17: Capturing how data flows within the system board.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -412,12 +398,11 @@ Figure 18 is a good example on how to describe signals at an interface. This is 
 
  <br>
  
-{: .center}
 ![Parallel port signals description](/images/ee-specs/image018.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 18: Parallel port signals going to the dot matrix printer are described.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -426,12 +411,11 @@ Figure 19 is cool, because the Pin 1 location of the Diskette Drive Adapter is l
 
  <br>
  
-{: .center}
 ![Floppy disk Pin 1](/images/ee-specs/image019.png){:class="img-responsive"}{:width="70%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 19: Illustrating your mechanical interfaces will help catch Pin 1 bugs!*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -466,12 +450,11 @@ Neglecting this step is a recipe for weird bugs that appear seemingly randomly d
 
  <br>
  
-{: .center}
 ![Specifying Floppy disks](/images/ee-specs/image020.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 20: IBM PC designers meticulously specified their 5 ¼’’ diskettes.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -483,12 +466,11 @@ We already saw an electrical block diagram example in Figure 10. Here is another
 
  <br>
  
-{: .center}
 ![Another EE block diagram example](/images/ee-specs/image021.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 21: Another electrical block diagram example.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -498,12 +480,11 @@ While you want to avoid full-blown, complex schematics in your specifications, u
 
  <br>
  
-{: .center}
 ![Joystick blog diagram](/images/ee-specs/image022.png){:class="img-responsive"}{:width="90%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 22: A simple joystick schematic. This is appropriate for a spec.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -515,12 +496,11 @@ A common mistake here is ambiguity with regard to “nominal” specs. Even data
 
  <br>
  
-{: .center}
 ![Parameter tolerances](/images/ee-specs/image023.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 23: Specify tolerances for your parameters.*
-{: refdef}
+{: style="text-align: center;"}
 
 <br>
 
@@ -533,13 +513,13 @@ The reason you are going through all this effort of writing a specification docu
 To give your spec a chance to be read widely, you need to ensure the you have grammar and spelling nailed, and that the document looks good. You do not need to spend five hours trying to find the perfect LaTeX package (*cough cough*) but do make the document clean and approachable. 
 
  <br>
- 
-{: .center}
-![Spec horror](/images/ee-specs/image024.png){:class="img-responsive"}{:width="90%"}
 
-{:refdef: style="text-align: center;"}
+![Spec horror](/images/ee-specs/image024.png){:class="img-responsive"}{:width="90%"}
+{: style="text-align: center;"}
+
 *Figure 24: Please promise me you won’t do this. [[3]](https://datasheet.datasheetarchive.com/originals/crawler/antcom.com/9ec044cf132c90fd9bd7bbcf3b40c318.pdf)*
-{: refdef}
+{: style="text-align: center;"}
+
 
 <br>
 
@@ -560,12 +540,12 @@ Some good ideas for appendices:
 
  <br>
  
-{: .center}
 ![IBM PC spec appendix](/images/ee-specs/image025.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 25: Appendices included with the IBM PC spec.*
-{: refdef}
+{: style="text-align: center;"}
+
 
 <br>
 
@@ -576,12 +556,12 @@ The glossary makes sure that the reader and the writer are on the same page when
 
  <br>
  
-{: .center}
 ![IBM PC spec glossary](/images/ee-specs/image026.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 26: Glossary from the IBM PC spec.*
-{: refdef}
+{: style="text-align: center;"}
+
 
 <br>
 
@@ -595,12 +575,12 @@ Continuously track any changes you make to the document to make sure there are n
 
  <br>
  
-{: .center}
 ![International Docking Standard, revision tracking.](/images/ee-specs/image027.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 27: Revision tracking from the International Docking Adapter specification. [[4]](https://www.internationaldockingstandard.com/download/IDSS_IDD_Revision_E_TAGGED.pdf)*
-{: refdef}
+{: style="text-align: center;"}
+
 
 <br>
 
@@ -611,12 +591,12 @@ List of Figures and List of Tables are great for easy reference.
 
  <br>
  
-{: .center}
 ![IBM PC Spec, list of figures](/images/ee-specs/image028.png){:class="img-responsive"}{:width="80%"}
+{: style="text-align: center;"}
 
-{:refdef: style="text-align: center;"}
 *Figure 28: List of figures from the IBM PC spec.*
-{: refdef}
+{: style="text-align: center;"}
+
 
 <br>
 
