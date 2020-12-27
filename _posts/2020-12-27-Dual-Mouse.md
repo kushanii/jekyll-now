@@ -11,7 +11,7 @@ Step one was to replace my classic-shaped mouse with an [Anker ergonomic mouse](
 
 <br>
 
-![Anker ergonomic mouse.](/images/dual-mouse/dualmouse1.jpg){:class="figure"}{:width="70%"}
+![Anker ergonomic mouse.](/images/dual-mouse/dualmouse1.jpg){:class="figure"}{:height?width="70%"}
 {: style="text-align: center;"}
 
 *Me holding Anker's ergonomic mouse with my right hand.*
@@ -23,7 +23,7 @@ Meanwhile, my left hand sits on top of an Xbox controller which has its buttons 
 
 <br>
 
-![Anker ergonomic mouse.](/images/dual-mouse/dualmouse3.jpg){:class="figure"}{:width="70%"}
+![Anker ergonomic mouse.](/images/dual-mouse/dualmouse3.jpg){:class="figure"}{:height?width="70%"}
 {: style="text-align: center;"}
 
 *I use the Xbox controller on my left hand to do the mouse clicks. I also have controller profiles that have keyboard shortcuts assigned to the Xbox controller buttons. This helps me do PCB layout faster.*
@@ -35,7 +35,7 @@ I used [Controller Companion](https://store.steampowered.com/app/367670/Controll
 
 <br>
 
-![Xbox controller button bindings.](/images/dual-mouse/dualmouse4.jpg){:class="figure"}{:width="90%"}
+![Xbox controller button bindings.](/images/dual-mouse/dualmouse4.jpg){:class="figure"}{:height?width="90%"}
 {: style="text-align: center;"}
 
 *Controller Companion on Steam lets one assign mouse and keyboard bindings to Xbox controller buttons.*

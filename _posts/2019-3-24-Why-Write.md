@@ -14,7 +14,7 @@ A huge inspiration for finally kicking off this blog came from watching Adam Sav
 
 {% raw %}
 <center>
-<iframe width="80%" height="315" src="https://www.youtube.com/embed/5SemyzKgaUU?start=796" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="80%" height="500" src="https://www.youtube.com/embed/5SemyzKgaUU?start=796" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 {% endraw %}
 
