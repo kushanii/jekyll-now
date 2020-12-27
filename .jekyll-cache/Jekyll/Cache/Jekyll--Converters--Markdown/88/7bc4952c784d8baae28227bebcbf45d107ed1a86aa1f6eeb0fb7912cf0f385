@@ -1,8 +1,8 @@
-I"��<p>About nine months ago, when I was still working at Microsoft as an electrical engineer on the Surface team, my manager asked me to write a specification for the project I was working on.</p>
+I"<�<p>About nine months ago, when I was still working at Microsoft as an electrical engineer on the Surface team, my manager asked me to write a specification for the project I was working on.</p>
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image001.jpg" alt="My teacher." class="img-responsive" width="70%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image001.jpg" alt="My teacher." class="figure" width="70%" /></p>
 
 <p style="text-align: center;"><em>Figure 1: My teacher. Photo by <a href="https://en.wikipedia.org/wiki/IBM_Personal_Computer#/media/File:Ibm_pc_5150.jpg">Ruben de Rijcke</a></em></p>
 
@@ -14,11 +14,11 @@
 
 <p>This was not the first time I was looking back on college and doubting myself. Every time I had to learn on the job, I kept asking myself: “Why don’t I know this already? Did I miss something at Stanford?”. I had gone to a good school, and studied under professors who could charge hundreds of dollars an hour consulting in the industry, so how come I did not know how to do so many of the seemingly basic tasks a junior engineer was expected to do? So, it went on and on:</p>
 
-<p class="center">EMI testing – why don’t I know this already?</p>
+<p style="text-align: center;"><em>EMI testing – why don’t I know this already?</em></p>
 
-<p class="center">PCB manufacturing – why don’t I know this already?</p>
+<p style="text-align: center;"><em>PCB manufacturing – why don’t I know this already?</em></p>
 
-<p class="center">Flexible circuit boards – why don’t I know this already?</p>
+<p style="text-align: center;"><em>Flexible circuit boards – why don’t I know this already?</em></p>
 
 <p>A week after I had received my new assignment, it became clear to me that learning how to write a specification was going to be my hardest learn-on-the-job experience yet. Why? Because I was actually having an unlearn-on-the-job experience.</p>
 
@@ -68,7 +68,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image002.jpg" alt="Huaqiangbei." class="img-responsive" width="75%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image002.jpg" alt="Huaqiangbei." class="img-responsive" width="75%" /></p>
 
 <p style="text-align: center;"><em>Figure 2: the Huaqiangbei in Shenzen, China. Photo by <a href="https://medium.com/chinafacture/huaqiangbei-the-biggest-electronics-market-in-the-world-shenzhen-china-3ec66e5d2df0">Tocha</a></em></p>
 
@@ -122,7 +122,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image003.jpg" alt="A boy using an IBM PC." class="img-responsive" width="75%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image003.jpg" alt="A boy using an IBM PC." class="img-responsive" width="75%" /></p>
 
 <p style="text-align: center;"><em>Figure 3: The IBM PC 5150, released in 1981. Photo by <a href="https://en.wikipedia.org/wiki/IBM_Personal_Computer#/media/File:Bundesarchiv_B_145_Bild-F077948-0006,_Jugend-Computerschule_mit_IBM-PC.jpg">Engelbert Reineke</a></em></p>
 
@@ -169,7 +169,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image004.png" alt="IBM PC Spec - Table of contents." class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image004.png" alt="IBM PC Spec - Table of contents." class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 4: Table of contents from the IBM PC specification.</em></p>
 
@@ -181,7 +181,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image005.png" alt="Subsections within the hardware section." class="img-responsive" width="75%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image005.png" alt="Subsections within the hardware section." class="img-responsive" width="75%" /></p>
 
 <p style="text-align: center;"><em>Figure 5: Subsections within the hardware section.</em></p>
 
@@ -193,7 +193,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image006.png" alt="Another page from the table of contents." class="img-responsive" width="75%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image006.png" alt="Another page from the table of contents." class="img-responsive" width="75%" /></p>
 
 <p style="text-align: center;"><em>Figure 6: Another page from the table of contents.</em></p>
 
@@ -207,7 +207,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image007.png" alt="A preface" class="img-responsive" width="75%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image007.png" alt="A preface" class="img-responsive" width="75%" /></p>
 
 <p style="text-align: center;"><em>Figure 7: A preface is a great way to introduce the reader to their quest in understanding your system.</em></p>
 
@@ -225,7 +225,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image008.png" alt="Abstraction Level 0" class="img-responsive" width="75%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image008.png" alt="Abstraction Level 0" class="img-responsive" width="75%" /></p>
 
 <p style="text-align: center;"><em>Figure 8: Abstraction Level 0, where we get an overview, and marketing-level specifications.</em></p>
 
@@ -233,7 +233,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image009.jpg" alt="Floppy disk" class="img-responsive" width="60%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image009.jpg" alt="Floppy disk" class="img-responsive" width="60%" /></p>
 
 <p style="text-align: center;"><em>Figure 9: A 5 ¼ ‘’ Diskette. Contrary to the popular belief, this is not a 3D printed save icon 😉 Photo by <a href="https://www.flickr.com/photos/22457710@N00/252074409">Theo Curmudgeon</a></em></p>
 
@@ -260,7 +260,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image010.png" alt="Abstraction Level 1" class="img-responsive" width="75%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image010.png" alt="Abstraction Level 1" class="img-responsive" width="75%" /></p>
 
 <p style="text-align: center;"><em>Figure 10: Abstraction Level 1, where we start getting real engineering details.</em></p>
 
@@ -284,7 +284,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image011.png" alt="Abstraction Level 2" class="img-responsive" width="75%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image011.png" alt="Abstraction Level 2" class="img-responsive" width="75%" /></p>
 
 <p style="text-align: center;"><em>Figure 11: Abstraction Level 2. Getting even more electrical engineering details now.</em></p>
 
@@ -300,7 +300,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image012.png" alt="IBM PC block diagram" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image012.png" alt="IBM PC block diagram" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 12: IBM PC’s block diagram. Easy on the eyes, and easy to understand. This is a good “Abstraction Level 0” block diagram.</em></p>
 
@@ -310,7 +310,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image013.png" alt="Floppy drive block diagram" class="img-responsive" width="90%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image013.png" alt="Floppy drive block diagram" class="img-responsive" width="90%" /></p>
 
 <p style="text-align: center;"><em>Figure 13: An “ Abstraction Level 2” block diagram for the Diskette Drive.</em></p>
 
@@ -324,7 +324,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image014.png" alt="Ground your pixels" class="img-responsive" width="85%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image014.png" alt="Ground your pixels" class="img-responsive" width="85%" /></p>
 
 <p style="text-align: center;"><em>Figure 14: “Make sure to connect your pixels to ground”. <a href="https://hackaday.com/2015/04/12/documenting-poorly-documented-led-strips/#more-152513">[5]</a></em></p>
 
@@ -334,7 +334,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image015.png" alt="Lattice Semi Datasheet" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image015.png" alt="Lattice Semi Datasheet" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 15: Whoa. There is a lot going on, <a href="https://www.latticesemi.com/-/media/LatticeSemi/Documents/ApplicationNotes/AD/DSPFunctionUsageGuideforICE40Devices.ashx?document_id=50669">let’s zoom in.</a></em></p>
 
@@ -342,7 +342,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image016.png" alt="Lattice Semi Datasheet, zoomed in and pixelated" class="img-responsive" width="75%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image016.png" alt="Lattice Semi Datasheet, zoomed in and pixelated" class="img-responsive" width="75%" /></p>
 
 <p style="text-align: center;"><em>Figure 16: 16x16 = 32??? <a href="https://twitter.com/oe1cxw/status/1097821398490320896">From Twitter user @oe1cxw</a></em></p>
 
@@ -358,7 +358,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image017.png" alt="IBM PC motherboard data flow" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image017.png" alt="IBM PC motherboard data flow" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 17: Capturing how data flows within the system board.</em></p>
 
@@ -368,7 +368,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image018.png" alt="Parallel port signals description" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image018.png" alt="Parallel port signals description" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 18: Parallel port signals going to the dot matrix printer are described.</em></p>
 
@@ -378,7 +378,7 @@
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image019.png" alt="Floppy disk Pin 1" class="img-responsive" width="70%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image019.png" alt="Floppy disk Pin 1" class="img-responsive" width="70%" /></p>
 
 <p style="text-align: center;"><em>Figure 19: Illustrating your mechanical interfaces will help catch Pin 1 bugs!</em></p>
 
@@ -414,7 +414,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image020.png" alt="Specifying Floppy disks" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image020.png" alt="Specifying Floppy disks" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 20: IBM PC designers meticulously specified their 5 ¼’’ diskettes.</em></p>
 
@@ -426,7 +426,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image021.png" alt="Another EE block diagram example" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image021.png" alt="Another EE block diagram example" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 21: Another electrical block diagram example.</em></p>
 
@@ -438,7 +438,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image022.png" alt="Joystick blog diagram" class="img-responsive" width="90%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image022.png" alt="Joystick blog diagram" class="img-responsive" width="90%" /></p>
 
 <p style="text-align: center;"><em>Figure 22: A simple joystick schematic. This is appropriate for a spec.</em></p>
 
@@ -452,7 +452,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image023.png" alt="Parameter tolerances" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image023.png" alt="Parameter tolerances" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 23: Specify tolerances for your parameters.</em></p>
 
@@ -466,7 +466,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image024.png" alt="Spec horror" class="img-responsive" width="90%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image024.png" alt="Spec horror" class="img-responsive" width="90%" /></p>
 
 <p style="text-align: center;"><em>Figure 24: Please promise me you won’t do this. <a href="https://datasheet.datasheetarchive.com/originals/crawler/antcom.com/9ec044cf132c90fd9bd7bbcf3b40c318.pdf">[3]</a></em></p>
 
@@ -494,7 +494,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image025.png" alt="IBM PC spec appendix" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image025.png" alt="IBM PC spec appendix" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 25: Appendices included with the IBM PC spec.</em></p>
 
@@ -506,7 +506,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image026.png" alt="IBM PC spec glossary" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image026.png" alt="IBM PC spec glossary" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 26: Glossary from the IBM PC spec.</em></p>
 
@@ -522,7 +522,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image027.png" alt="International Docking Standard, revision tracking." class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image027.png" alt="International Docking Standard, revision tracking." class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 27: Revision tracking from the International Docking Adapter specification. <a href="https://www.internationaldockingstandard.com/download/IDSS_IDD_Revision_E_TAGGED.pdf">[4]</a></em></p>
 
@@ -534,7 +534,7 @@ Architecture must be carefully distinguished from implementation. As Blaauw has 
 
 <p><br /></p>
 
-<p class="center"><img src="/images/ee-specs/image028.png" alt="IBM PC Spec, list of figures" class="img-responsive" width="80%" /></p>
+<p style="text-align: center;"><img src="/images/ee-specs/image028.png" alt="IBM PC Spec, list of figures" class="img-responsive" width="80%" /></p>
 
 <p style="text-align: center;"><em>Figure 28: List of figures from the IBM PC spec.</em></p>
 
